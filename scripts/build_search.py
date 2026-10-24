@@ -14,6 +14,7 @@ def initials(s,teacher=False):
  if teacher and s and s[0] in surname:letters[0]=surname[s[0]]
  return ''.join(letters).lower()
 d=read('catalog.json');s=read('survey.json');notes={n['key']:n for n in d['notes']}
+supplement=read('review-supplement.json') if (ROOT/'data/review-supplement.json').exists() else {'records':[]}
 image=Image.open(ROOT/s['image']).convert('RGB');dest=ROOT/'assets/survey-rows';dest.mkdir(exist_ok=True)
 name_map={'人工智能数学基础':'人工智能的数学基础','人工智能软件基础':'人工智能的软件基础','伦理':'人工智能的伦理与治理'}
 for r in s['rows']:
@@ -30,7 +31,8 @@ entries={}
 for g in d['scope']:
  course_names=[g['name'],*d['course_aliases'].get(g['name'],[])]
  teacher_names=list(dict.fromkeys(g['teachers']+[t for k in g['note_keys'] for t in notes.get(k,{}).get('teachers',[])]+[t for r in s['rows'] if g['id'] in r['course_ids'] for t in r['teachers']]))
- fields=[g['code'],*[o['code'] for o in g['offerings']]]
+ teacher_names=list(dict.fromkeys(teacher_names+[t for r in supplement['records'] if g['id'] in r['course_ids'] for t in r.get('teacher_names',[]) if t]))
+ fields=[g['code'],*g.get('historical_codes',[]),*[o['code'] for o in g['offerings']]]
  for n in course_names:fields.extend([n,initials(n),re.sub(r'[^a-z0-9]','',initials(n))])
  for n in teacher_names:
   fields.extend([n,initials(n,True)])
