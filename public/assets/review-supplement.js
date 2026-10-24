@@ -1,5 +1,5 @@
 'use strict';
-/* Source URLs stay in the private research log. Only course materials link out. */
+/* Canonical public source links and brief excerpts accompany course reviews. */
 window.ReviewSupplement=(()=>{
  let data={records:[],materials:[],historical_syllabi:[]};
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -10,7 +10,8 @@ window.ReviewSupplement=(()=>{
  }
  function label(r){return [r.teacher||'教师未注明',r.term||'修读学期未注明',r.scope_label].filter(Boolean).join(' · ')}
  function comments(course,teacher){const rows=select(course,teacher);if(!rows.length)return '';
-  return `<section class="detail-resource supplement"><h3>补充课评与公开体验</h3><p class="meta">学生亲历、教师统计、媒体采访分别标注。历史班级数据按原学期保留。</p>${rows.map(r=>`<article class="evidence" data-supplement="${esc(r.id)}"><h4>${esc(label(r))}</h4><p>${esc(r.summary)}</p>${[['workload','投入与作业'],['assessment','考核'],['grading','给分经历']].filter(([k])=>r[k]).map(([k,t])=>`<p><b>${t}：</b>${esc(r[k])}</p>`).join('')}${r.numbers?.length?`<p><b>具体数据：</b>${r.numbers.map(esc).join('；')}</p>`:''}${r.mapping_note?`<p class="meta">归属：${esc(r.mapping_note)}</p>`:''}<p class="citation">来源：${esc(r.source_label)} · ${esc(r.source_type)}</p></article>`).join('')}</section>`;
+  const cards=rows.map(r=>`<article class="evidence" data-supplement="${esc(r.id)}"><div class="review-source-type">${esc(r.source_type)}</div><h4>${esc(label(r))}</h4><p>${esc(r.summary)}</p>${[['workload','投入与作业'],['assessment','考核'],['grading','给分经历']].filter(([k])=>r[k]).map(([k,t])=>`<p><b>${t}：</b>${esc(r[k])}</p>`).join('')}${r.numbers?.length?`<p><b>具体数据：</b>${r.numbers.map(esc).join('；')}</p>`:''}${r.short_excerpt?`<blockquote class="review-excerpt">${esc(r.short_excerpt)}<small>原回答短摘</small></blockquote>`:''}${r.source_excerpts?.length?`<details class="review-original"><summary>查看对应树洞原评节选</summary>${r.source_excerpts.map(x=>`<blockquote class="review-excerpt"><b>${esc(x.label)}</b><p>${esc(x.text)}</p></blockquote>`).join('')}</details>`:''}${r.mapping_note?`<p class="meta">归属：${esc(r.mapping_note)}</p>`:''}<p class="citation">来源：${esc(r.source_label)} · 引用编号 ${esc(r.source_id||r.id)}${r.source_url?` · <a data-review-source="public" href="${esc(r.source_url)}" target="_blank" rel="noopener noreferrer">查看原文 ↗</a>`:''}</p></article>`);
+  return `<section class="detail-resource supplement"><h3>课程体验与原帖节选</h3><p class="meta">公开课评、树洞经历与助教说明合并查阅，各自保留来源。跨平台转载和同一作者的多课回顾不算多个独立样本；原文可能需要登录。</p>${cards.join('')}</section>`;
  }
  function summary(course,teacher){const rows=select(course,teacher).filter(r=>r.judgment);if(!rows.length)return '';
   return `<section class="detail-note supplement"><h3>本轮补充判断</h3>${rows.map(r=>`<div class="evidence"><h4>${esc(label(r))}</h4><p class="verdict">${esc(r.judgment)}</p><p class="citation">依据：${esc(r.source_label)} · ${esc(r.source_type)}</p></div>`).join('')}</section>`;
