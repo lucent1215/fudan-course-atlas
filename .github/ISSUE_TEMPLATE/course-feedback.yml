@@ -1,0 +1,28 @@
+name: 课程补充与纠错
+description: 补充某门课的教师差异、修读体验或资料依据
+title: "[课程] "
+body:
+  - type: input
+    id: course
+    attributes:
+      label: 课程名称与代码
+      placeholder: 数理统计 MATH30011
+    validations:
+      required: true
+  - type: input
+    id: offering
+    attributes:
+      label: 教师、学期与班型
+      placeholder: 尤翀，2026春，数学英才班
+  - type: textarea
+    id: content
+    attributes:
+      label: 补充或纠正的内容
+      description: 可以写讲课、作业、考核、成绩反馈、先修或课程资料。
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: 来源与具体数据
+      description: 本人修读、匿名评价编号、材料名称或页码；有数据时说明其学期和范围。

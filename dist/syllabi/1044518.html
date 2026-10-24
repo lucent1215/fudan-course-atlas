@@ -1,0 +1,65 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>自然语言处理与大语言模型 · 周宝健 · 2026秋 CS40008.01</title><link rel="stylesheet" href="../assets/source.css"></head><body><nav><a href="../index.html">返回复旦选课地图</a></nav><h1>自然语言处理与大语言模型 · 周宝健 · 2026秋 CS40008.01</h1><p class="meta">教务系统读取：2026-10-23；这是系统当前返回、绑定该教学班的大纲。</p><p>2026秋 · CS40008.01 · 3.0学分 · </p><h2>先修要求</h2>线性代数(MATH10017)，机器学习导论(STAT30027)<h2>考核与成绩构成</h2><table><tr><td>出勤Attendance</td><td>5.0%</td><td>全部课程按时出席，未迟到早退，遵守课堂纪律，出现线上教学周时，能够及时在线完成签到，得100分；缺席一次扣除50，扣完为止。</td></tr><tr><td>课堂表现Participation</td><td>5.0%</td><td>能够对课程中的5次Quiz（每次1题，用时20分钟），能够完成正确完成的，得分100；Quiz 提供思路但是分析出错的扣除10分。</td></tr><tr><td>作业/实验/实践Assignment</td><td>40.0%</td><td>学期内有4次大作业，按全部作业的平均分数计算最终平时作业成绩，全部及时完成并且答对所有题目的得分100；每次作业未能按时完成作业，迟交1天扣除30分，扣完为止；具体作业题的评判标准需根据具体作业情况进行评判。</td></tr><tr><td>汇报Presentation</td><td>50.0%</td><td>1.	（优秀，&gt;85）针对所选NLP任务，能够提出解决该任务的语言模型，能够针对所选模型，选择合适的算法并能够实现之，能够提供若干种基线算法，并且能够撰写完整的PJ报告。 2.	（中等，84-70）针对所选任务，能够提出解决方案，能够准确实现该模型有的一个算法，算法能够运行并给出合理的输出，能够基本完成PJ报告的各项内容。 3.	（及格，60-69）基本能够分析出任务的模型，但是存在一定的错误，能够基本上跑通模型，基本能够完成报告的内容。 4.	（不及格，&lt;60）所选模型错误，报告不完整等。</td></tr></table><h2>课程简介（中文）</h2><p>本课程系统讲授自然语言处理基础理论与大语言模型前沿进展，覆盖分词、语言模型、词向量、Transformer架构、预训练与后训练对齐、检索增强生成、效率优化与智能体等主题。学生将掌握从分词、预训练、微调到部署大语言模型的全过程。</p><h2>课程简介（英文）</h2><p>This course covers the foundations of natural language processing and recent advances in large language models, including tokenization, language models, word embeddings, the Transformer architecture, pretraining and post-training alignment, retrieval-augmented generation, efficiency optimization, and agents. Students will master the full pipeline of building large language models, from tokenization and pretraining through fine-tuning to deployment.</p><h2>教学目标</h2><ol>
+
+<li>知识层面：通过本课程的学习，能够准确描述两种以上文本分类方法；给定一个具体的NLP任务，能描述出解决该任务的方法；针对文本预处理、词向量、语言建模与问答等任务，能准确描述至少1种算法及其实现流程；掌握word2vec等词向量模型、Transformer架构、GPT预训练与BERT掩码建模，掌握Post-training、PPO、DPO等对齐技术，了解检索增强生成与效率优化等前沿方向。</li>
+
+<li>能力层面：通过本课程的学习，能够使用Python实现某一具体的NLP算法；给定某一具体自然语言处理任务，能够使用学习的算法，解决之。能够从零实现分词器与Transformer核心组件，对预训练模型进行微调与评测，并搭建检索增强生成系统。</li>
+
+<li>价值层面：在学习完本课程后，能够针对某一个具体的文本任务，设计相应的语言模型并使用Python实现；理解大模型对齐与安全的重要性，如实标注AI工具的使用。</li>
+
+</ol><h2>教学方式</h2><p>本课程以课内讲授、课外实践的方法为主，通过学生完成一个实际项目掌握自然语言处理的基础原理和应用技术。主要采用线下教学方式，具体来说有以下主要活动：</p>
+
+<ol>
+
+<li><strong><u>小组讨论</u></strong>：在课堂上，学生在讲述关键模型时，能够和同伴讨论后，提供自己的思路。特别是针对课程知识重点和难点，采用小组讨论的方式，针对不理解的地方展开讨论。</li>
+
+<li><strong><u>思维导图</u></strong>：在学习完每个单元后，学生要求能够画出NLP模型思维导图，帮助学生自己梳理模型，选择使用不同的NLP模型。</li>
+
+<li><strong><u>案例研究</u></strong>：针对某一NLP问题，采用案例研究方式，评估模型的好坏。</li>
+
+</ol><h2>教学内容与进度安排</h2><p>1. 基础部分</p>
+
+<p>(Basics) Text pre-processing and tokenization (BPE/WordPiece) <br>(Basics) Language models (N-grams, smoothing, perplexity) <br>(Basics) Text classification and word embeddings (word2vec) <br>(Basics) Neural networks for LM (RNNs, LSTMs, encoder-decoder)</p>
+
+<p>2. 大模型技术</p>
+
+<p>(LLMs) Attention and self-attention mechanism<br>(LLMs) Transformer architecture<br>(LLMs) Pre-training and fine-tuning (GPT series) <br>(LLMs) Datasets and benchmarks for LLMs <br>(LLMs) BERT and masked language modeling <br>(LLMs) Post-training (SFT, RM, PPO, DPO), in-context learning </p>
+
+<p>3. 应用与前沿<br>(Applications) Information retrieval and RAG  <br>(Applications) Course project presentation <br>(Applications) Diffusion language models <br>(Applications) Alignment and safety, red-teaming<br>(Applications) Efficiency and systems (KV cache, quantization)<br>(Applications) Agents, multimodal LLMs and frontiers</p><h2>课程考核与成绩评定</h2><h2>教材</h2><h2>教学参考资料</h2><table width="627">
+
+<tbody>
+
+<tr>
+
+<td width="151">
+
+<p>Speech and Language Processing</p>
+
+</td>
+
+<td width="76">
+
+<p>Dan Jurafsky and James H. Martin</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="151">
+
+<p>Sparks of Artificial General Intelligence Early experiments with GPT-4</p>
+
+</td>
+
+<td width="76">
+
+<p>Sébastien Bubeck et. al.</p>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table><h2>教学团队成员</h2><p class="meta"><a href="https://fdjwgl.fudan.edu.cn/student/for-std/lesson-search/teachingSyllabusInfo/1044518">教务原页（联网、需登录）</a></p></body></html>
