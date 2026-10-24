@@ -1,0 +1,14 @@
+'use strict';
+const CourseTaxonomy=(()=>{
+ const codes={GEIP:'思政',GESP:'形势与政策',GECC:'通识核心',GESS:'国家安全',GEEF:'公共英语',GECS:'公共汉语',GESF:'第二外语',GEPE:'体育',GEND:'军事',GEIN:'创新创业',GEMH:'心理健康',GEEC:'通识选修',GEFS:'新生研讨',GEXZ:'复旦行知',GEIS:'暑期国际'};
+ const palettes={ai:['#4657ad','#f0f2fc'],math:['#176d68','#eef8f6'],cs:['#346b99','#edf5fc'],physics:['#93612b','#fff7eb'],core:['#71548d','#f6f0fb'],other:['#60716a','#f2f5f3'],GEIP:['#a4414d','#fff0f1'],GESP:['#99505a','#fcf0f2'],GECC:['#7b5796','#f7f1fc'],GESS:['#70544f','#f8f1ed'],GEEF:['#326ca2','#eef5fd'],GECS:['#447883','#edf8fa'],GESF:['#4664a1','#f1f4ff'],GEPE:['#327d4b','#eef8ed'],GEND:['#667537','#f5f8eb'],GEIN:['#a06520','#fff6e8'],GEMH:['#9a5074','#fff0f6'],GEEC:['#547867','#eff7f2'],GEFS:['#4c7d83','#eff9fa'],GEXZ:['#9b6143','#fff3eb'],GEIS:['#5867a4','#f2f4ff']};
+ function prefix(g){return g.code.match(/^[A-Z]+/)?.[0]||'';}
+ function core(g){return g.plan_refs.some(r=>r.title!==D.public_plan&&/必修|核心/.test(r.requirement));}
+ function type(g){const p=prefix(g);if(['AIB','AIE','AIS','AIT'].includes(p))return'ai';if(codes[p])return p;if(p==='MATH'||g.categories.some(c=>c==='数学专业'||c==='数学公共基础'))return'math';if(/^(CS|COMP|SOFT)/.test(p)||g.categories.some(c=>/计算机|CS/.test(c)))return'cs';if(g.categories.some(c=>/物理/.test(c)))return'physics';return core(g)?'core':'other';}
+ function label(key){return codes[key]?codes[key]+' · '+key:({ai:'AI课程',math:'数学课程',cs:'计算机课程',physics:'物理与学科基础',core:'其他专业核心',other:'其他课程'}[key]||key);}
+ function match(g,value){if(value==='all')return true;if(value==='core')return !['math','ai','cs'].includes(type(g))&&core(g);if(value==='ge')return !!codes[prefix(g)];if(value==='pe')return g.is_pe;return type(g)===value;}
+ function style(g){const [color,tint]=palettes[type(g)]||palettes.other;return `--course-accent:${color};--course-tint:${tint}`;}
+ function badge(g){return `<span class="course-kind">${label(type(g))}</span>`;}
+ function init(data){const select=document.querySelector('#category');const ge=[...new Set(data.scope.map(prefix).filter(p=>codes[p]))].sort();select.innerHTML='<option value="all">全部课程</option><optgroup label="专业与基础课程">'+['ai','math','cs','core','physics','other'].map(t=>`<option value="${t}">${label(t)}</option>`).join('')+'</optgroup><optgroup label="通识课程 · 按GE代码"><option value="ge">全部GE课程</option>'+ge.map(p=>`<option value="${p}">${label(p)}</option>`).join('')+'</optgroup>';}
+ return {type,label,match,style,badge,init};
+})();

@@ -1,0 +1,1 @@
+ALTER TABLE `community_reviews` ADD `kind` text DEFAULT 'review' NOT NULL;
