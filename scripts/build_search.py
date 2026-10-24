@@ -37,6 +37,7 @@ for g in d['scope']:
  for n in teacher_names:
   fields.extend([n,initials(n,True)])
   if n in d['aliases']:fields.append(d['aliases'][n])
+  fields.extend(d.get('teacher_aliases',{}).get(n,[]))
  entries[g['id']]={'fields':list(dict.fromkeys(norm(x) for x in fields if x)),'teachers':teacher_names}
 write('search.json',{'scope':'课程代码、课程名称、已知课程别名、相关教师姓名及拼音首字母；不含内部ID、分类与评论正文。','entries':entries})
 print('SEARCH_AND_ROW_CROPS_READY',len(entries),'courses',len(s['rows']),'survey row images')
