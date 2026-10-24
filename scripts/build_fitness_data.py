@@ -31,6 +31,6 @@ for sex,table_index,bonus_index in [('male',2,4),('female',3,5)]:
   assert rows[0]['points']==100 and rows[-1]['points']==10
   data['groups'][sex+'_'+('12' if year==0 else '34')]={'rows':rows,'bonus':bonus}
 assert sum(data['weights'].values())==100
-target=HERE.parent/'dist/data/fitness.json'
+target=HERE.parent/'public/data/fitness.json'
 target.write_text(json.dumps(data,ensure_ascii=False,separators=(',',':')),encoding='utf8')
 print('FITNESS_DATA_READY',len(data['groups']),'groups')

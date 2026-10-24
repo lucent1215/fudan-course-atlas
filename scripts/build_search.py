@@ -3,7 +3,7 @@ from pathlib import Path
 import json,re,sys,unicodedata
 from pypinyin import lazy_pinyin,Style
 from PIL import Image
-ROOT=Path(__file__).resolve().parents[1]/'dist'
+ROOT=Path(__file__).resolve().parents[1]/'public'
 def read(name):return json.loads((ROOT/'data'/name).read_text(encoding='utf8'))
 def write(name,data):(ROOT/'data'/name).write_text(json.dumps(data,ensure_ascii=False,separators=(',',':')),encoding='utf8')
 def norm(s):return re.sub(r'[\s·，,:：]','',unicodedata.normalize('NFKC',s).lower())

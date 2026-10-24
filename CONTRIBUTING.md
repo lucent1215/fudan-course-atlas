@@ -13,7 +13,7 @@
 
 ## 修改课程资料
 
-在 `dist/data/catalog.json` 中按课程代码（如 `MATH30011`）定位课程。JSON较大，批量修改适合先克隆到本机，用编辑器或Python读写。
+在 `public/data/catalog.json` 中按课程代码（如 `MATH30011`）定位课程。JSON较大，批量修改适合先克隆到本机，用编辑器或Python读写。
 
 - `scope`：课程分组、教学班、专业方案对应关系。
 - `notes`：逐师综评，包含讲课、工作量、考核、历史给分、适合人群、先修与证据编号。
@@ -32,7 +32,7 @@
 
 ## 修改计算工具
 
-主要逻辑在 `dist/assets/components.js`，测试在 `tests/components.test.cjs`。
+主要逻辑在 `public/assets/components.js`，测试在 `tests/components.test.cjs`。
 
 ```shell
 npm test

@@ -10,6 +10,8 @@
 - 调查图按课程与教师拆分到详情，保留推测、小班、未注明教师等原始标记。
 - 单门及多门课GPA试算，可从教学班清单加入课程；P/NP与浮动绩点区间单独处理。
 - 等级与绩点表；按用户填写的本课分档计算原始分数、等第、绩点，同分按不同分数值确定映射位次。
+- 选课规则：22项官方规则与办理提醒，记录版本、适用范围与条款；过期学期窗口明确标记。
+- 上传课评：按课程、教师、学期与班型发布，支持附件在线预览和删除自己的投稿。
 - 国家体测计算器：大学男生/女生、大一大二/大三大四、七项标准分及两项附加分。
 
 公开数据集包含1006组课程、3543个教学班、3289份保存的大纲与663条综合判断，主要对应2026春秋开课资料。缺少的评价与大纲明确保留缺项。课程详情只显示来源说明，不提供原文跳转链接。
@@ -22,17 +24,25 @@
 
 ## 本地运行
 
-这是无构建步骤的静态网站，在仓库根目录运行：
+网站使用Vinext / Cloudflare Worker，保留原静态课程界面，并新增D1课评存储与R2附件。Node.js要求≥22.13。
 
 ```shell
-python -m http.server 8000 --directory dist
+npm ci
+npm run build
 ```
 
-然后打开 `http://localhost:8000`。页面通过HTTP读取JSON；请使用本地服务器运行。
+本地预览首次运行需依次执行 `drizzle/` 内SQL（仅本地，按生成顺序，已经执行的不要重复）：
+
+```shell
+node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0000_mysterious_misty_knight.sql
+npm run dev
+```
+
+本地开发登录由模板模拟；生产登录由Sites提供。公开浏览无需登录，发布和删除自己的投稿需登录。课评公开显示昵称，服务端身份不返回浏览器。附件支持PDF、PNG、JPG、TXT、Markdown，最多3个、每个8MB。写入接口校验同源、登录、字段和文件格式，24小时内每个账号最多投稿10篇。使用自己的部署环境时，配置逻辑绑定 `DB` 与 `BUCKET`；数据不会随源码或构建产物导出。
 
 ## 运行测试与更新索引
 
-安装Node.js后可直接执行，无需安装npm依赖：
+计算组件测试可在安装Node.js后执行：
 
 ```shell
 npm test
@@ -53,15 +63,18 @@ python scripts/build_search.py
 
 | 路径 | 内容 |
 | --- | --- |
-| `dist/index.html` | 页面和组件结构 |
-| `dist/assets/app.js` | 检索、筛选、课程详情和逐班比较 |
-| `dist/assets/components.js` | GPA、分数映射和体测计算 |
-| `dist/data/catalog.json` | 课程、教学班、逐师综评和匿名摘录 |
-| `dist/data/search.json` | 课程代码、名称与教师拼音首字母索引 |
-| `dist/data/survey.json` | 调查图结构化记录及课程对应关系 |
-| `dist/data/grading.json` | 成绩制度依据与适用范围 |
-| `dist/data/fitness.json` | 国家体测大学生组评分档位 |
-| `dist/syllabi/` | 按教学班保存的大纲内容 |
+| `public/index.html` | 页面和组件结构 |
+| `public/assets/app.js` | 检索、筛选、课程详情和逐班比较 |
+| `public/assets/components.js` | GPA、分数映射和体测计算 |
+| `public/data/catalog.json` | 课程、教学班、逐师综评和匿名摘录 |
+| `public/data/search.json` | 课程代码、名称与教师拼音首字母索引 |
+| `public/data/survey.json` | 调查图结构化记录及课程对应关系 |
+| `public/data/grading.json` | 成绩制度依据与适用范围 |
+| `public/data/fitness.json` | 国家体测大学生组评分档位 |
+| `public/syllabi/` | 按教学班保存的大纲内容 |
+| `public/data/rules.json` | 已核验的官方选课规则及条款出处 |
+| `app/api/`、`lib/community.ts` | 课评与附件接口，登录和权限检查 |
+| `db/`、`drizzle/` | 数据结构与不可变迁移记录 |
 | `tests/`、`scripts/` | 可独立运行的计算测试与数据生成脚本 |
 
 ## 材料与适用范围
@@ -69,3 +82,5 @@ python scripts/build_search.py
 课程体验按教师、班型、学期分别理解。调查图是调查材料，未提供样本量和时间范围，不代表实际班级分布，也不用于估计拿A概率。2024版数学学院手册与2026级荣誉项目按对应年级区分；完整方案由公共部分与本人专业部分共同组成。
 
 成绩制度、国家体测和原始资料保留各自来源。第三方PDF、匿名摘录与调查图沿用原有权利和许可；数学资料汇编保留原文件署名与许可页。本仓库的公开协作不改变第三方材料原有许可。
+
+端到端投稿验证：安装或指定Playwright模块后运行 `node tests/community.e2e.cjs`（仅面向本地开发登录，不在生产创建测试课评）。
