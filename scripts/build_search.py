@@ -15,6 +15,12 @@ def initials(s,teacher=False):
  return ''.join(letters).lower()
 d=read('catalog.json');s=read('survey.json');notes={n['key']:n for n in d['notes']}
 supplement=read('review-supplement.json') if (ROOT/'data/review-supplement.json').exists() else {'records':[]}
+enrollment=read('enrollment.json') if (ROOT/'data/enrollment.json').exists() else {'records':[]}
+historical_teachers={};historical_sections={}
+for r in enrollment['records']:
+ for cid in r['course_ids']:
+  historical_teachers.setdefault(cid,set()).update(r['teachers'])
+  historical_sections.setdefault(cid,set()).update([r['section_code'],r['section_code'].split('.')[0]])
 image=Image.open(ROOT/s['image']).convert('RGB');dest=ROOT/'assets/survey-rows';dest.mkdir(exist_ok=True)
 name_map={'人工智能数学基础':'人工智能的数学基础','人工智能软件基础':'人工智能的软件基础','伦理':'人工智能的伦理与治理'}
 for r in s['rows']:
@@ -32,7 +38,9 @@ for g in d['scope']:
  course_names=[g['name'],*d['course_aliases'].get(g['name'],[])]
  teacher_names=list(dict.fromkeys(g['teachers']+[t for k in g['note_keys'] for t in notes.get(k,{}).get('teachers',[])]+[t for r in s['rows'] if g['id'] in r['course_ids'] for t in r['teachers']]))
  teacher_names=list(dict.fromkeys(teacher_names+[t for r in supplement['records'] if g['id'] in r['course_ids'] for t in r.get('teacher_names',[]) if t]))
+ teacher_names=list(dict.fromkeys(teacher_names+sorted(historical_teachers.get(g['id'],[]))))
  fields=[g['code'],*g.get('historical_codes',[]),*[o['code'] for o in g['offerings']]]
+ fields.extend(sorted(historical_sections.get(g['id'],[])))
  for n in course_names:fields.extend([n,initials(n),re.sub(r'[^a-z0-9]','',initials(n))])
  for n in teacher_names:
   fields.extend([n,initials(n,True)])
