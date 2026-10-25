@@ -1,0 +1,23 @@
+(function(){
+  'use strict';
+  let data={records:[],sources:{}};const byId=new Map();
+  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  function text(v){return typeof v==='string'?v:Array.isArray(v)?v.map(text).filter(Boolean).join('；'):''}
+  function profile(g,teacher){return (byId.get(g.id)?.by_teacher||[]).find(r=>r.teacher===teacher)}
+  function card(g,teachers=[]){const r=byId.get(g.id);return r?r.card:g.name+' · 课程资料正在整理。'}
+  function comparison(g,teachers,key){const r=byId.get(g.id);if(!r)return '—';const profiles=(r.by_teacher||[]).filter(p=>teachers.includes(p.teacher)||p.teacher.split(/[、,，]/).every(t=>teachers.includes(t.trim())));if(key==='summary')return profiles.length?profiles.map(p=>p.teacher+'：'+p.summary).join('；'):r.card;const field={teaching:'learning',prereq:'fit'}[key]||key;return profiles.map(p=>text(p[field]||(key==='teaching'?p.summary:''))).filter(Boolean).join('；')||(!r.by_teacher?.length?text(r[field]):'')||'—'}
+  function sources(refs){const rs=[...new Set(refs||[])];return rs.length?'<details class="synthesis-sources"><summary>综合依据 · '+rs.length+'项</summary>'+rs.map(key=>'<p>'+esc(data.sources[key]?.label||key)+'</p>').join('')+'</details>':''}
+  function summary(g,teacher='all'){
+    const r=byId.get(g.id);if(!r)return '<section class="detail-note"><h3>课程综合描述</h3><p>'+esc(g.name)+'的综合描述正在整理。</p></section>';
+    const p=teacher==='all'?null:profile(g,teacher),overview=p?.summary||(teacher!=='all'&&r.learning?r.learning:r.overview||r.card);
+    let out='<section class="detail-note course-synthesis"><h3>课程综合描述</h3><p class="verdict">'+esc(overview)+'</p>';
+    const fields=[['learning','课程主线'],['workload','主要投入'],['assessment','考核安排'],['grading','给分与考试反馈'],['fit','选课与准备']];
+    for(const [k,label] of fields){const value=text(p?p[k]:r[k]);if(value&&value!==overview)out+='<div class="field"><b>'+label+'</b><p>'+esc(value)+'</p></div>'}
+    if(teacher==='all'&&r.by_teacher?.length)out+='<div class="teacher-synthesis">'+r.by_teacher.map(t=>'<article><h4>'+esc(t.teacher)+(g.teachers.includes(t.teacher)?'':' <span class="meta">历史资料</span>')+'</h4><p>'+esc(t.summary)+'</p>'+[['workload','投入'],['assessment','考核'],['grading','成绩反馈']].filter(([k])=>text(t[k])).map(([k,l])=>'<p><b>'+l+'：</b>'+esc(text(t[k]))+'</p>').join('')+'</article>').join('')+'</div>';
+    if(r.discussion_takeaways?.length)out+='<div class="field"><b>讨论中的备考线索</b>'+r.discussion_takeaways.map(v=>'<p>'+esc(v)+'</p>').join('')+'</div>';
+    out+=sources(p?.source_refs?.length?p.source_refs:r.source_refs);
+    if(r.gaps?.length)out+='<details class="synthesis-gaps"><summary>资料缺项</summary>'+r.gaps.map(v=>'<p>'+esc(text(v))+'</p>').join('')+'</details>';
+    return out+'</section>';
+  }
+  window.CourseSynthesis={async init(){const r=await fetch('data/course-summaries.json');if(!r.ok)throw Error('课程综合描述未载入');data=await r.json();for(const row of data.records)byId.set(row.id,row)},card,summary,profile,comparison,sourceCount:g=>(byId.get(g.id)?.source_refs||[]).length,teachers:g=>(byId.get(g.id)?.by_teacher||[]).map(r=>r.teacher)};
+})();

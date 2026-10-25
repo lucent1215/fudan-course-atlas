@@ -1,10 +1,13 @@
 # 复旦选课地图
 
-[在线使用](https://fudan-course-atlas.xiasinm.chatgpt.site) · [下载引用资料包](https://github.com/pythonbug225/fudan-course-atlas/releases/tag/references-20261025-handbooks) · [参与修改](CONTRIBUTING.md) · [提交反馈](https://github.com/pythonbug225/fudan-course-atlas/issues)
+[在线使用](https://fudan-course-atlas.xiasinm.chatgpt.site) · [下载引用资料包](https://github.com/pythonbug225/fudan-course-atlas/releases/tag/references-20261026-discussions) · [参与修改](CONTRIBUTING.md) · [提交反馈](https://github.com/pythonbug225/fudan-course-atlas/issues)
 
 按课程代码、课程名、教师名和拼音首字母检索复旦课程，课程卡片按AI、数学、其他专业课与GE代码分类着色，逐班比较学习收益、时间负担与成绩风险。每门课保留四部分：课程大纲、课程资料、课评与树洞、对比和总结。
 
 ## 功能
+
+- 课程综合描述：1008组重写，教师、课程版本和年份分别比较，依据和资料缺项独立展示。
+- 精选阅读：211篇较详细蛋壳原评索引，并列公开长文、树洞长评和精选讨论。公开页标明短摘；公开文章与树洞有原站入口，完整原评JSON可在浏览器本地导入阅读，正文不上传。
 
 - 课程卡片：显示当前筛选教学班的学分和开课院系；英语课程按2026公共方案标综合英语、进阶、高阶，非公共英语通识课不凭名称套级。
 - 手册资料：两份用户提供的通识与体育手册按201门课程映射；通识保留历史教师版本，体育区分训练内容和明确测试项目，资料区可直接打开PDF对应页。
@@ -19,7 +22,7 @@
 - 往期人数：2023秋至2026秋七个常规学期，11,757条代码和名称均匹配的教学班记录，覆盖1000组课程；在课程总结中按学期和教师比较人数/上限、班型、课表。人数不等同第一志愿偏好或教师好评。
 - 国家体测计算器：大学男生/女生、大一大二/大三大四、七项标准分及两项附加分。
 
-公开数据集包含1008组课程、3543个教学班、3289份保存的大纲、663条原有综评及841条补充记录。范围内现有3696条直接原评已完整阅读；603组已有课程判断，其余保留无可用评价或未采用状态。课程资料及公开文章课评提供来源链接；大纲与对比总结显示来源文字。年级群只公开匿名短摘与年级、日期、消息编号。
+公开数据集包含1008组课程、3543个教学班、3289份保存的大纲、663条原有综评及866条补充记录。1008组课程的卡片与综合描述均已重写；其中有修读证据的课程综合评论、讨论与试卷，无直接课评的课程依据大纲或手册介绍内容和考核，资料缺项单独展开。既有范围内3696条直接原评已阅读，这一统计与综述覆盖数分开。课程资料及公开文章课评提供来源链接；大纲与对比总结显示来源文字。年级群只公开匿名短摘与年级、日期、消息编号。
 
 ## 所有人怎样参与编辑
 
@@ -72,6 +75,8 @@ python scripts/build_search.py
 | `public/assets/app.js` | 检索、筛选、课程详情和逐班比较 |
 | `public/assets/components.js` | GPA、分数映射和体测计算 |
 | `public/data/catalog.json` | 课程、教学班、逐师综评和匿名摘录 |
+| `public/data/course-summaries.json` | 重写后的课程与逐师综述、依据和缺项 |
+| `public/data/curated-reading.json` | 较详细原评的定位、长度和内容维度，不镜像完整正文 |
 | `public/data/handbooks.json` | 通识与体育手册的课程映射、版本、考核和PDF页码 |
 | `public/data/enrollment.json` | 七学期课程人数、容量和课表；不含个人选课数据 |
 | `public/data/search.json` | 课程代码、名称与教师拼音首字母索引 |
@@ -95,6 +100,6 @@ python scripts/build_search.py
 
 ## 参考资料与来源
 
-[GitHub参考资料包](https://github.com/pythonbug225/fudan-course-atlas/releases/tag/references-20261025-handbooks)按课程索引、大纲与培养方案、数学试卷分包；本次只更新索引包，大纲与试卷沿用前版原件。解压到同一目录后打开离线引用目录。附课程引用索引、JSON/CSV、BibTeX和SHA256清单。FDU-Sharing原件保留固定commit链接，避免重复镜像上游大文件。
+[GitHub参考资料包](https://github.com/pythonbug225/fudan-course-atlas/releases/tag/references-20261026-discussions)按课程索引、大纲与培养方案、数学试卷分包；本次只更新索引包，大纲与试卷沿用前版原件。解压到同一目录后打开离线引用目录。附课程引用索引、JSON/CSV、BibTeX和SHA256清单。FDU-Sharing原件保留固定commit链接，避免重复镜像上游大文件。
 
 详见[本轮续补记录](docs/review-research-20261025-batch2.md)与[此前阅读台账](docs/review-research-20261025.md)。私人聊天原档、完整树洞导出、成员信息和登录状态不进入公开仓库或Release。

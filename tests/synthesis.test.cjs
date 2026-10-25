@@ -1,0 +1,15 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),path=require('node:path');
+const root=path.resolve(__dirname,'../public'),read=f=>JSON.parse(fs.readFileSync(root+'/data/'+f,'utf8'));
+const data=read('course-summaries.json'),catalog=read('catalog.json'),reader=read('curated-reading.json'),supplement=read('review-supplement.json');
+let passed=0;const ok=(v,m)=>{assert.ok(v,m);passed++};
+ok(data.records.length===catalog.scope.length&&new Set(data.records.map(r=>r.id)).size===catalog.scope.length,'all courses have exactly one rewritten synthesis');
+const refs=data.records.flatMap(r=>[...r.source_refs,...r.by_teacher.flatMap(p=>p.source_refs||[])]);ok(refs.every(k=>data.sources[k]?.label),'every synthesis reference resolves');
+ok(data.records.every(r=>!/如课程确为|不建议据此|很弱.*参考|需核对实际/.test(r.card+r.overview)),'regression: cards describe known courses directly');
+ok(reader.courses.every(r=>r.long_reviews.every(x=>x.original_characters>=450&&x.topics.length>=3)),'detailed review index records length and dimensions');
+const box={window:{},fetch:async()=>({ok:true,json:async()=>data})};vm.runInNewContext(fs.readFileSync(root+'/assets/course-synthesis.js','utf8'),box);
+(async()=>{const api=box.window.CourseSynthesis;await api.init();const rep=catalog.scope.find(g=>g.id==='C0091'),numerical=catalog.scope.find(g=>g.id==='C0026');
+const yupeng=api.summary(rep,'王宇鹏'),qingxue=api.summary(rep,'王庆雪');ok(yupeng.includes('作业30%')&&!yupeng.includes('作业20%'),'Yupeng class does not inherit Qingxue weights');ok(qingxue.includes('作业20%')&&!qingxue.includes('作业30%'),'Qingxue class does not inherit Yupeng weights');ok(!api.summary(rep).includes('如课程确为'),'old conditional claim not rendered');
+ok(api.comparison(rep,['王宇鹏'],'summary').includes('有限群')&&!api.comparison(rep,['王宇鹏'],'summary').includes('PID'),'comparison uses the selected teacher');ok(api.comparison(rep,['王庆雪'],'assessment').includes('35%'),'comparison uses current synthesized assessment');
+ok(api.card(numerical).includes('2025')&&api.card(numerical).includes('2026'),'numeric PDE recent exam experiences retained');ok(supplement.records.some(r=>r.course_ids.includes('C0026')&&r.id.startsWith('discussion_')&&r.source_excerpts.length),'numeric PDE discussions include actual extracts');
+ok(!/<a\b/.test(api.summary(rep)),'summary source labels remain plain text');
+console.log(JSON.stringify({passed,courses:data.records.length,long_reviews:reader.stats.long_reviews}));})();
