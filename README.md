@@ -1,6 +1,6 @@
 # 复旦选课地图
 
-[在线使用](https://fudan-course-atlas.xiasinm.chatgpt.site) · [下载引用资料包](https://github.com/pythonbug225/fudan-course-atlas/releases/tag/references-20261024) · [参与修改](CONTRIBUTING.md) · [提交反馈](https://github.com/pythonbug225/fudan-course-atlas/issues)
+[在线使用](https://fudan-course-atlas.xiasinm.chatgpt.site) · [下载引用资料包](https://github.com/pythonbug225/fudan-course-atlas/releases/tag/references-20261025-batch2) · [参与修改](CONTRIBUTING.md) · [提交反馈](https://github.com/pythonbug225/fudan-course-atlas/issues)
 
 按课程代码、课程名、教师名和拼音首字母检索复旦课程，课程卡片按AI、数学、其他专业课与GE代码分类着色，逐班比较学习收益、时间负担与成绩风险。每门课保留四部分：课程大纲、课程资料、课评与树洞、对比和总结。
 
@@ -16,7 +16,7 @@
 - 上传课评/资料：可分别发布到评论区和资料区，按课程、教师、学期与班型发布，支持附件在线预览和删除自己的投稿。
 - 国家体测计算器：大学男生/女生、大一大二/大三大四、七项标准分及两项附加分。
 
-公开数据集包含1008组课程、3543个教学班、3289份保存的大纲、663条原有综评及744条补充记录。范围内现有3696条直接原评已完整阅读；601组已有课程判断，其余保留无可用评价或未采用状态。课程资料及公开文章课评提供来源链接；大纲与对比总结显示来源文字。年级群只公开匿名短摘与年级、日期、消息编号。
+公开数据集包含1008组课程、3543个教学班、3289份保存的大纲、663条原有综评及769条补充记录。范围内现有3696条直接原评已完整阅读；602组已有课程判断，其余保留无可用评价或未采用状态。课程资料及公开文章课评提供来源链接；大纲与对比总结显示来源文字。年级群只公开匿名短摘与年级、日期、消息编号。
 
 ## 所有人怎样参与编辑
 
@@ -90,6 +90,6 @@ python scripts/build_search.py
 
 ## 参考资料与来源
 
-[GitHub参考资料包](https://github.com/pythonbug225/fudan-course-atlas/releases/tag/references-20261024)按课程索引、大纲与培养方案、数学试卷分包；解压到同一目录后打开离线引用目录。附课程引用索引、JSON/CSV、BibTeX和SHA256清单。FDU-Sharing原件保留固定commit链接，避免重复镜像上游大文件。
+[GitHub参考资料包](https://github.com/pythonbug225/fudan-course-atlas/releases/tag/references-20261025-batch2)按课程索引、大纲与培养方案、数学试卷分包；本次只更新索引包，大纲与试卷沿用前版原件。解压到同一目录后打开离线引用目录。附课程引用索引、JSON/CSV、BibTeX和SHA256清单。FDU-Sharing原件保留固定commit链接，避免重复镜像上游大文件。
 
-详见[本轮检索与阅读记录](docs/review-research-20261025.md)。私人聊天原档、完整树洞导出、成员信息和登录状态不进入公开仓库或Release。
+详见[本轮续补记录](docs/review-research-20261025-batch2.md)与[此前阅读台账](docs/review-research-20261025.md)。私人聊天原档、完整树洞导出、成员信息和登录状态不进入公开仓库或Release。
