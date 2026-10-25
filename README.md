@@ -1,11 +1,13 @@
 # 复旦选课地图
 
-[在线使用](https://fudan-course-atlas.xiasinm.chatgpt.site) · [下载引用资料包](https://github.com/pythonbug225/fudan-course-atlas/releases/tag/references-20261025-deep) · [参与修改](CONTRIBUTING.md) · [提交反馈](https://github.com/pythonbug225/fudan-course-atlas/issues)
+[在线使用](https://fudan-course-atlas.xiasinm.chatgpt.site) · [下载引用资料包](https://github.com/pythonbug225/fudan-course-atlas/releases/tag/references-20261025-handbooks) · [参与修改](CONTRIBUTING.md) · [提交反馈](https://github.com/pythonbug225/fudan-course-atlas/issues)
 
 按课程代码、课程名、教师名和拼音首字母检索复旦课程，课程卡片按AI、数学、其他专业课与GE代码分类着色，逐班比较学习收益、时间负担与成绩风险。每门课保留四部分：课程大纲、课程资料、课评与树洞、对比和总结。
 
 ## 功能
 
+- 课程卡片：显示当前筛选教学班的学分和开课院系；英语课程按2026公共方案标综合英语、进阶、高阶，非公共英语通识课不凭名称套级。
+- 手册资料：两份用户提供的通识与体育手册按201门课程映射；通识保留历史教师版本，体育区分训练内容和明确测试项目，资料区可直接打开PDF对应页。
 - 课程检索：公共方案＋一个专业方案，支持学期、班型、课程要求、代码前缀和通识模块筛选。
 - 调查图按课程与教师拆分到详情，保留推测、小班、未注明教师等原始标记。
 - 教务与数院两种GPA口径：数院另分2027届推免累计70分和2024级奖学金学年修正，A+4.3、总/专业各50%，推免并列现行与旧固定版。
@@ -70,6 +72,7 @@ python scripts/build_search.py
 | `public/assets/app.js` | 检索、筛选、课程详情和逐班比较 |
 | `public/assets/components.js` | GPA、分数映射和体测计算 |
 | `public/data/catalog.json` | 课程、教学班、逐师综评和匿名摘录 |
+| `public/data/handbooks.json` | 通识与体育手册的课程映射、版本、考核和PDF页码 |
 | `public/data/enrollment.json` | 七学期课程人数、容量和课表；不含个人选课数据 |
 | `public/data/search.json` | 课程代码、名称与教师拼音首字母索引 |
 | `public/data/survey.json` | 调查图结构化记录及课程对应关系 |
@@ -92,6 +95,6 @@ python scripts/build_search.py
 
 ## 参考资料与来源
 
-[GitHub参考资料包](https://github.com/pythonbug225/fudan-course-atlas/releases/tag/references-20261025-deep)按课程索引、大纲与培养方案、数学试卷分包；本次只更新索引包，大纲与试卷沿用前版原件。解压到同一目录后打开离线引用目录。附课程引用索引、JSON/CSV、BibTeX和SHA256清单。FDU-Sharing原件保留固定commit链接，避免重复镜像上游大文件。
+[GitHub参考资料包](https://github.com/pythonbug225/fudan-course-atlas/releases/tag/references-20261025-handbooks)按课程索引、大纲与培养方案、数学试卷分包；本次只更新索引包，大纲与试卷沿用前版原件。解压到同一目录后打开离线引用目录。附课程引用索引、JSON/CSV、BibTeX和SHA256清单。FDU-Sharing原件保留固定commit链接，避免重复镜像上游大文件。
 
 详见[本轮续补记录](docs/review-research-20261025-batch2.md)与[此前阅读台账](docs/review-research-20261025.md)。私人聊天原档、完整树洞导出、成员信息和登录状态不进入公开仓库或Release。

@@ -16,6 +16,7 @@ def initials(s,teacher=False):
 d=read('catalog.json');s=read('survey.json');notes={n['key']:n for n in d['notes']}
 supplement=read('review-supplement.json') if (ROOT/'data/review-supplement.json').exists() else {'records':[]}
 enrollment=read('enrollment.json') if (ROOT/'data/enrollment.json').exists() else {'records':[]}
+handbooks=read('handbooks.json') if (ROOT/'data/handbooks.json').exists() else {'records':[]}
 historical_teachers={};historical_sections={}
 for r in enrollment['records']:
  for cid in r['course_ids']:
@@ -39,6 +40,7 @@ for g in d['scope']:
  teacher_names=list(dict.fromkeys(g['teachers']+[t for k in g['note_keys'] for t in notes.get(k,{}).get('teachers',[])]+[t for r in s['rows'] if g['id'] in r['course_ids'] for t in r['teachers']]))
  teacher_names=list(dict.fromkeys(teacher_names+[t for r in supplement['records'] if g['id'] in r['course_ids'] for t in r.get('teacher_names',[]) if t]))
  teacher_names=list(dict.fromkeys(teacher_names+sorted(historical_teachers.get(g['id'],[]))))
+ teacher_names=list(dict.fromkeys(teacher_names+[t for r in handbooks['records'] if g['id'] in r['course_ids'] for t in r.get('teacher_names',[])]))
  fields=[g['code'],*g.get('historical_codes',[]),*[o['code'] for o in g['offerings']]]
  fields.extend(sorted(historical_sections.get(g['id'],[])))
  for n in course_names:fields.extend([n,initials(n),re.sub(r'[^a-z0-9]','',initials(n))])
