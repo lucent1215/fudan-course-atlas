@@ -2,7 +2,7 @@
   'use strict';
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   let index=new Map(),reviews=new Map(),supplements=[],local=new Map();
-  function clean(html){const doc=new DOMParser().parseFromString(String(html||''),'text/html');doc.querySelectorAll('script,style,iframe').forEach(n=>n.remove());return doc.body.textContent.trim()}
+  function clean(html){const template=document.createElement('template');template.innerHTML=String(html||'');template.content.querySelectorAll('script,style,iframe').forEach(n=>n.remove());return template.content.textContent.trim()}
   function body(r){const original=local.get(Number(r.id));return original?`<p class="meta">完整原文 · 从本机文件读取</p><div class="reader-original">${esc(original)}</div>`:`<p class="meta">原文节选 · 完整原评约${esc(r.original_characters)}字</p><blockquote>${esc(r.content)}</blockquote><p class="meta">在旦夕的蛋壳课评中检索“${esc(r.course_group)}”，按教师、修读年和课评编号定位原文。</p>`}
   function render(g,teacher='all'){
     const long=(index.get(g.id)||[]).filter(r=>teacher==='all'||r.teacher===teacher).map(x=>({...reviews.get(x.review_id),...x,id:x.review_id}));
