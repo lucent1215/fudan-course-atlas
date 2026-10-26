@@ -2,7 +2,7 @@
   'use strict';
   let data=null,loading=null;const byCourse=new Map(),chosenTerm=new Map();
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const termRank=s=>Number(String(s).slice(0,4))*2+(String(s).includes('秋')?1:0);
+  const termRank=s=>Number(String(s).slice(0,4))*3+(String(s).includes('秋')?2:String(s).includes('暑')?1:0);
   async function init(){
     if(loading)return loading;
     loading=fetch('data/enrollment.json').then(r=>{if(!r.ok)throw Error('enrollment '+r.status);return r.json()}).then(d=>{data=d;for(const r of d.records||[])for(const cid of r.course_ids||[]){if(!byCourse.has(cid))byCourse.set(cid,[]);byCourse.get(cid).push(r)}return true}).catch(()=>false);
@@ -25,6 +25,7 @@
       for(const r of group){
         const hasCap=r.limit_count>0,ratio=hasCap?r.std_count/r.limit_count:null,share=total>0?r.std_count/total:null;
         html+='<article class="enrollment-row" data-enrollment-section="'+esc(r.section_code)+'"><div class="enrollment-row-top"><b>'+esc(r.teachers.join('、')||'教师未注明')+'</b><strong>'+r.std_count+' / '+r.limit_count+' 人</strong></div><div class="enrollment-bar" aria-hidden="true"><i style="width:'+(hasCap?Math.min(100,ratio*100):0)+'%"></i></div><p class="enrollment-caption">'+esc(r.section_code)+' · '+(hasCap?'容量使用率 '+(ratio*100).toFixed(1)+'%'+(ratio>1?'（超过原定上限）':''):'容量未注明，不计算比例')+(allGroup.length>1&&share!==null?' · 本组人数占比 '+(share*100).toFixed(1)+'%':'')+'</p>';
+        if(!hasCap&&r.planned_capacity)html+='<p class="meta">课程表预排人数 '+esc(r.planned_capacity)+'；不作为当前系统上限。</p>';
         if(r.schedule_hint)html+='<details class="enrollment-schedule"><summary>上课时间与地点</summary><p>'+esc(r.schedule_hint)+'</p></details>';
         html+='</article>';
       }

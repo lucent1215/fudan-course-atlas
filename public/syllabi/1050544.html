@@ -1,0 +1,265 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>大模型训练和推理创新实战 · 徐跃东 · 2026暑 GEIN40005.01</title><style>body{max-width:1000px;margin:35px auto;padding:0 20px;font:16px/1.9 system-ui}table{border-collapse:collapse}td,th{border:1px solid #cad7cf;padding:8px}img{max-width:100%}</style><body><h1>大模型训练和推理创新实战</h1><p>2026暑 · GEIN40005.01 · 徐跃东</p><p>来源：复旦教务系统教学班大纲，保存于2026-10-26。</p><h2>考核与成绩构成</h2><ul><li>出勤Attendance 15.0% 出勤60%以上，得满分</li><li>课堂表现Participation 15.0% 注意听讲、积极主动得满分</li><li>作业/实验/实践Assignment 70.0% 课程作业：3 次，单次占比 10%分数 课程项目：1 项，分组完成及汇报，占比 30%分数 课程认证：1 项，至少完成一项认证，占比10%</li></ul><h2>课程简介（中文）</h2><p>本课程面向硕士生和本科生，致力于培养具有人工智能软硬件体系结构基础知识、国产算力平台实践能力的优秀人才。近年来大规模深度学习技术引领了人工智能技术的突破性进展，并不断赋能基础科学研究。为了适应这一趋势，本课程拟介绍以Transformer为核心的大模型推理和训练系统部署、加速方法设计等。课程教学秉承理论与实际紧密结合的理念，加强实际动手能力的培养，与华为合作开展大模型的设计实践活动，以及依托课程开展昇腾AI创新大赛、华为ICT大赛等竞赛培训。</p><h2>课程简介（英文）</h2><p><span>This course is designed for both undergraduate and graduate students, aiming to cultivate outstanding talents with foundational knowledge of AI software–hardware architectures and hands-on experience with domestic computing platforms. In recent years, large-scale deep learning technologies have driven breakthrough advances in artificial intelligence and continuously empowered fundamental scientific research. To keep pace with this trend, this course introduces large-model inference and training systems centered on the Transformer architecture, including system deployment and acceleration method design. The course adheres to the principle of closely integrating theory with practice, emphasizing the development of practical skills. In collaboration with Huawei, students will participate in hands-on large-model design projects. The course also supports training for competitions such as the Ascend AI Innovation Contest and the Huawei ICT Competition.</span></p><h2>教学目标</h2><p>教学目标主要包括三个方面：（1）掌握人工智能大模型预训练、后训练和推理的基础理论知识；（2）掌握华为昇腾MindSpeed大模型训练及微调解决方案、MindIE大模型推理解决方案；（3）掌握华为昇腾算力平台的大模型推理和训练系统部署和设计。</p><h2>教学方式</h2><p>基础理论内容（8学时）、企业实训内容（24学时）。主讲教师教授大模型训练和推理的基础理论、重要算法，内容具有通用性。企业实训教师根据理论和算法授课内容开展大模型训练和推理的实地培训，基于国产化算力平台，以练习作业和课程项目相结合的方式培养学生的动手能力，增强对于人工智能大模型训练和推理技术的理解，并在此基础上更进一步进行项目开发和组织参加创新大赛。</p><h2>教学内容与进度安排</h2><table width="614">
+<tbody>
+<tr>
+<td width="108">
+<p><strong>课次</strong><strong>/</strong><strong>模块</strong></p>
+<p>No.</p>
+</td>
+<td width="81">
+<p><strong>教学周</strong></p>
+<p>Week</p>
+</td>
+<td width="302">
+<p><strong>教学内容及预期效果</strong></p>
+<p>Content &amp; Expected Achievement</p>
+</td>
+<td width="123">
+<p><strong>作业</strong><strong>/</strong><strong>练习</strong></p>
+<p>Assignment</p>
+</td>
+</tr>
+<tr>
+<td width="108">
+<p>1.大模型基础（理论）</p>
+</td>
+<td width="81">
+<p>第1天</p>
+<p>（2学时）</p>
+</td>
+<td width="302">
+<p>教学内容：</p>
+<p>系统介绍Transformer模型结构，计算时间复杂度、空间复杂度，大模型的自注意力机制。</p>
+<p>预期效果：</p>
+<p>通过学习，达成：</p>
+<p>1) 掌握Transformer大模型的基本结构；</p>
+<p>2) 掌握大模型的计算时间、存储空间分析方法；</p>
+<p>3）了解Transformer大模型的注意力机制，稀疏注意力机制等优化方法。</p>
+</td>
+<td width="123">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td width="108">
+<p>2.大模型并行化训练原理</p>
+<p>（理论）</p>
+</td>
+<td width="81">
+<p>第1天</p>
+<p>（2学时）</p>
+</td>
+<td width="302">
+<p>教学内容：</p>
+<p>介绍Transformer大模型训练的并行化基础知识，包括数据并行、张量并行、流水线并行，以及多维混合并行的典型方法。</p>
+<p>预期效果：</p>
+<p>通过学习，达成：</p>
+<p>1) 理解大模型分布式训练的设计理念；</p>
+<p>2) 理解计算、通信、存储资源瓶颈对于分布式训练策略的影响；</p>
+<p>3）了解并行化训练的典型算法，帮助学生理解并行化训练机制设计的挑战。</p>
+</td>
+<td width="123">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td width="108">
+<p>3.昇腾大模型训练解决方案</p>
+<p>（实践）</p>
+</td>
+<td width="81">
+<p>第2天</p>
+<p>（2学时）</p>
+</td>
+<td width="302">
+<p>教学内容：</p>
+<p>系统介绍昇腾MindSpeed大模型训练解决方案技术栈，内容涵盖分布式训练原理、预训练与微调方法及强化学习训练策略介绍，并结合实践演示如何利用MindSpeed完成大模型的高效训练。</p>
+<p>预期效果：</p>
+<p>通过学习，达成：</p>
+<p>1) 了解大模型分布式训练趋势和挑战；</p>
+<p>2) 熟悉昇腾MindSpeed大模型训练解决方案；</p>
+<p>3）掌握使用MindSpeed大模型训练的方法，帮助学生掌握端到端的大模型构建与优化能力。</p>
+</td>
+<td width="123">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td width="108">
+<p>4. 大模型训练多维并行化</p>
+<p>（实践）</p>
+</td>
+<td width="81">
+<p>第2天</p>
+<p>（2学时）</p>
+</td>
+<td width="302">
+<p>教学内容：</p>
+<p>1)完成ModelArts-MindSpeed开发环境搭建；</p>
+<p>2）动手完成一个基于昇腾平台的轻量级大模型预训练 (暂定以Qwen2.5-7B模型，达到Loss收敛）</p>
+<p>预期效果：</p>
+<p>掌握 ModelArts-MindSpeed 开发环境搭建方法，具备昇腾平台轻量级大模型预训练实操能力。</p>
+</td>
+<td width="123">
+<p>作业：基于昇腾平台的轻量级大模型预训练，达到Loss收敛。</p>
+<p>拓展阅读：MindSpeed LLM开发实践，了解 MindSpeed LLM 相关概念、工具和开发流程，并初步具备在不同场景下大模型训练和性能调优的基本能力</p>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td width="108">
+<p>5. 大模型微调方法</p>
+<p>（理论）</p>
+</td>
+<td width="81">
+<p>第3天</p>
+<p>（2学时）</p>
+</td>
+<td width="302">
+<p>教学内容：</p>
+<p>概括介绍Transformer大模型微调的主要方法，包括提示词微调、全参数微调、低秩微调、强化学习微调，重点介绍提示词微调和低秩微调。</p>
+<p>预期效果：</p>
+<p>通过学习，达成：</p>
+<p>1) 掌握大模型微调的基本原理；</p>
+<p>2) 掌握大模型推理的提示词微调和LoRA低秩微调方法；</p>
+<p>3) 了解不同微调方法的优缺点，鼓励学生发挥创造力提出高效、高性能的微调算法。</p>
+</td>
+<td width="123">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td width="108">
+<p>6. 大模型推理优化</p>
+<p>（理论）</p>
+</td>
+<td width="81">
+<p>第3天</p>
+<p>（2学时）</p>
+</td>
+<td width="302">
+<p>教学内容：</p>
+<p>系统介绍Transformer大模型推理的KV Cache管理、解码方法与投机解码、连续批推理等优化方法。</p>
+<p>预期效果：</p>
+<p>通过学习，达成：</p>
+<p>1) 掌握大模型推理的GPU/NPU显存约束；</p>
+<p>2) 掌握大模型推理的键-值缓存管理策略；</p>
+<p>3) 掌握大模型推理中的大小模型协同推理加速方法，鼓励学生发挥创造力提出新型推理优化方法。</p>
+</td>
+<td width="123">
+<p>拓展阅读：</p>
+<p>大小模型协同推理算法、KV Cache管理策略等代表性论文；</p>
+</td>
+</tr>
+<tr>
+<td width="108">
+<p>7. 大模型微调实践</p>
+</td>
+<td width="81">
+<p>第4天</p>
+<p>（2学时）</p>
+</td>
+<td width="302">
+<p>教学内容：</p>
+<p>基于昇腾MindSpeed MM套件，完成多模态大模型训练微调实验，输出微调后的模型权重。</p>
+<p>预期效果：</p>
+<p>1）掌握高质量图文数据集的构建方法；</p>
+<p>2）掌握对大语言模型部分参数微调方法，提升模型在专业领域的语义理解与生成能力，学生能够独立运用MindSpeed MM套件，将通用多模态大模型成功适配至其他专业领域(如医疗、电商等)。</p>
+</td>
+<td width="123">
+<p>作业：基于昇腾MindSpeed MM套件，完成多模态大模型训练微调实验，输出微调后的模型权重</p>
+</td>
+</tr>
+<tr>
+<td width="108">
+<p>8. 昇腾大模型推理解决方案</p>
+</td>
+<td width="81">
+<p>第4天</p>
+<p>（2学时）</p>
+</td>
+<td width="302">
+<p>教学内容：</p>
+<p>1）系统介绍昇腾MindIE大模型推理解决方案整体简介，包含技术全景，组件介绍等；</p>
+<p>2）vLLM-Ascend架构介绍；</p>
+<p>3）vLLM-Ascend推理部署流程；</p>
+<p>4）推理精度&amp;性能分析方法。</p>
+<p>预期效果：</p>
+<p>1）熟悉昇腾大模型MindIE推理解决方案；</p>
+<p>2）掌握 vLLM-Ascend架构，以及端到端部署流程和方法，了解常见推理参数及环境变量定义及使用方法；</p>
+<p>3）掌握精度&amp;性能测试方法及数据采集方法，能够通过精度/性能数据分析进行问题分析。</p>
+</td>
+<td width="123">
+<p>作业：基于vLLM-Ascend完成一个轻量级大模型的推理部署</p>
+<p>拓展阅读：基于昇腾平台的多模态生成推理技术</p>
+</td>
+</tr>
+<tr>
+<td width="108">
+<p>9. 课程考核项目引导</p>
+</td>
+<td width="81">
+<p>第5天</p>
+<p>（2学时）</p>
+</td>
+<td width="302">
+<p>教学内容：</p>
+<p>开发者认证介绍，发布昇腾开发者认证任务</p>
+<p>2）分享应用案例（暂定DeepSeek-R1-Distill-Qwen-14B聊天机器人案例），发布考核方式和参考课程项目课题。</p>
+<p>预期效果：</p>
+<p>1）通过自学开发者认证所涉及的线上课程，熟悉昇腾大模型训练推理解决方案，至少通过一门开发者认证：推理开发者认证（入门级）/ 训练开发者认证（入门级）</p>
+<p>2）学习了解简单大模型应用开发，并通过案例和参考课程项目课题，激发小组思路，确定小组项目课题。</p>
+</td>
+<td width="123">
+<p>课后任务：</p>
+<p>1）整体课程结课前：要求至少通过一门开发者认证：推理开发者认证（入门级）/ 训练开发者认证（入门级）</p>
+<p>2）当天下课前：学生完成自由组队，每组最多不超过3人；</p>
+<p>3）当天下课前：确定课题，基于昇腾开发板开发应用（可以从牵引课题列表中选取或自命题， 作为考核课题）。</p>
+</td>
+</tr>
+<tr>
+<td width="108">
+<p>10. 分组课程考核项目开发</p>
+</td>
+<td width="81">
+<p>第5~7天</p>
+<p>（2学时*5）</p>
+</td>
+<td width="302">
+<p>教学内容：</p>
+<p>华为技术专家提供技术支持，小组协同进行课程项目开发，以及汇报材料输出。</p>
+<p>预期效果：</p>
+<p>输出可运行的应用Demo，以及汇报材料。</p>
+</td>
+<td width="123">
+<p>项目考核：</p>
+<p>分组完成课程考核项目开发，输出可运行的应用Demo，以及汇报材料。</p>
+</td>
+</tr>
+<tr>
+<td width="108">
+<p>11. 分组汇报 &amp; 结课</p>
+</td>
+<td width="81">
+<p>第8天</p>
+<p>（2学时*2）</p>
+</td>
+<td width="302">
+<p>教学内容：</p>
+<p>1）每组一位代表进行汇报，由授课老师、实践课程讲师组成评委评分，并点评。评委可从以下几方面进行考评：方案完整性、技术创新性、代码（干净优雅）、成果发表（讲解清晰）；</p>
+<p>2）结课总结；</p>
+<p>3）介绍昇腾AI创新大赛2026。</p>
+<p>预期效果：</p>
+<p>所有小组完成汇报；</p>
+<p>学生报名参加创新大赛。</p>
+</td>
+<td width="123">
+<p>课后竞赛(可选)：</p>
+<p>昇腾AI创新大赛</p>
+</td>
+</tr>
+</tbody>
+</table><h2>课程考核与成绩评定</h2><h2>教材</h2><h2>教学参考资料</h2><p>(1)《云原生数据中心网络》、迪内希·G.杜特、9787519856755、中国电力出版社、2021</p>
+<p>(2)《昇腾AI处理器CANN架构与编程》、苏统华等、9787302601043、清华大学出版社、2022</p>
+<p>(3)《大模型训练与推理加速实战：基于CUDA计算平台》、温浩、电子工业出版社、2025</p>
+<p>(4)《从零构建大模型：算法、训练与微调》、梁楠、9787302685616、清华大学出版社、2025</p>
+<p>(5)《昇腾AI处理器CANN架构与编程》、苏统华、9787302601043、清华大学出版社、2022</p><h2>教学团队成员</h2><h2>教材与参考书</h2><p>张奇,桂韬,郑锐,黄萱菁；2023-01；9787121467059；大规模语言模型：从理论到实践；电子工业出版社</p></body></html>
