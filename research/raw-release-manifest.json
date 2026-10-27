@@ -1,0 +1,130 @@
+{
+  "schema": "fudan-source-snapshots/1",
+  "created_at": "2026-10-27T09:09:13.556979+00:00",
+  "release_tag": "raw-snapshots-20261027",
+  "source_file_count": 14613,
+  "unique_blob_count": 14589,
+  "categories": {
+    "research-ledgers": 153,
+    "treehole": 5403,
+    "source-documents": 54,
+    "external-web": 36,
+    "danke": 4848,
+    "official-rules": 18,
+    "official-outlines": 3290,
+    "official-summer": 92,
+    "official-enrollment": 7,
+    "official-programs-and-outlines": 712
+  },
+  "excluded": {
+    "excluded-private-chat": 54,
+    "excluded-external-fulltext": 159,
+    "excluded-generated-baseline": 27
+  },
+  "object_banks": {
+    "treehole": {
+      "name": "treehole-objects.jsonl.gz",
+      "objects": 491478
+    },
+    "danke": {
+      "name": "danke-objects.jsonl.gz",
+      "objects": 6177
+    }
+  },
+  "redactions": {
+    "email": 14629,
+    "phone": 16599,
+    "student_number": 991,
+    "id_card": 51,
+    "wechat_id": 654,
+    "access_secret": 33,
+    "contact": 80804,
+    "share_password": 1855,
+    "local_path": 11250,
+    "original_deleted": 2489,
+    "private_share_url": 2391,
+    "invalid_url": 2,
+    "signed_url": 840,
+    "html_scripts_forms_removed": 8,
+    "removed_identity_or_secret_field": 19302,
+    "external_fulltext_not_redistributed": 11,
+    "author_restricts_republication": 3
+  },
+  "assets": [
+    {
+      "name": "research-ledgers-001.zip",
+      "bytes": 5243846,
+      "sha256": "2a0b62de5ac106b1d4df6ae8cf3e3d9b6ba5064cad43893f878f6ca305c47ba6"
+    },
+    {
+      "name": "treehole-001.zip",
+      "bytes": 49088219,
+      "sha256": "6f984747466dc80333feb0c7ad28a69d2b7c5c33c3e5749983a125d86b939262"
+    },
+    {
+      "name": "source-documents-001.zip",
+      "bytes": 1914830,
+      "sha256": "c9f0c170247e82671ad3450e1d7d7696b2d779f490644b42d59e8bf76c72d2f7"
+    },
+    {
+      "name": "external-web-001.zip",
+      "bytes": 230332,
+      "sha256": "ff0507c69b5a07683bc8a25efe913c166ea2e99b3883304e750124eb57aa024a"
+    },
+    {
+      "name": "danke-001.zip",
+      "bytes": 3394226,
+      "sha256": "0a5b549f845d86e07eb0a9a92b629f3ae4518c5874d3d79b372bd1ecb0484765"
+    },
+    {
+      "name": "official-rules-001.zip",
+      "bytes": 142494,
+      "sha256": "992b01ca9f6e83cd2406dac7d06e10bbe0d842ad854a077a295808852237fb7e"
+    },
+    {
+      "name": "official-outlines-001.zip",
+      "bytes": 25949617,
+      "sha256": "4f4f122300dd81177a190befb0797cf2d60d28b2e111bdae7a8ce74e7eaf0144"
+    },
+    {
+      "name": "official-summer-001.zip",
+      "bytes": 598874,
+      "sha256": "b844ab9d5d22892dcfc567312702eb1239493023865983c3b88b0195250265ea"
+    },
+    {
+      "name": "official-enrollment-001.zip",
+      "bytes": 2755709,
+      "sha256": "edc5b9b7e60d1044902e28959614e536360aa15701f35c0a313759f6f1af2ada"
+    },
+    {
+      "name": "official-programs-and-outlines-001.zip",
+      "bytes": 4529988,
+      "sha256": "504be9a7f9696482eee22ae12c5d87d4cd80d204c6979f6c56e825ae7f747411"
+    },
+    {
+      "name": "treehole-objects.jsonl.gz",
+      "bytes": 91150989,
+      "sha256": "90c20b7ac4af3013a0b44b3cfff448e60d7e4bf6ad983afc10f16da201f5e4d8"
+    },
+    {
+      "name": "danke-objects.jsonl.gz",
+      "bytes": 2181756,
+      "sha256": "434b432082072c7dbe7cf20005fc5b7f6c3930a0181846a43811581058cbd948"
+    },
+    {
+      "name": "source-inventory.jsonl",
+      "bytes": 10121633,
+      "sha256": "12d2ac5b324641c824302fb963b4e68556170e71e33fbe4348d76e3dc6966884"
+    }
+  ],
+  "license_note": "Third-party source rights remain unchanged. Treehole/DanKe original text follows the community agreement unless the author declares otherwise. Explicitly restricted/deleted bodies are withheld. External copyrighted article full texts and private chats are not republished.",
+  "community_agreement": "https://danxi.fduhole.com/doc/community-user-agreement",
+  "limitations": [
+    "Redacted source snapshots, not byte-identical raw originals.",
+    "Machine-collected hits are not a reading/adoption ledger.",
+    "No original private group chats, account/profile graphs, cookies or login state.",
+    "External article full text and screenshots are excluded; use attributed summaries and canonical links.",
+    "Media URLs do not imply their binaries are available offline.",
+    "Earlier official materials/exam PDFs remain in their existing reference releases; this release avoids duplicate binaries."
+  ]
+}

@@ -1,0 +1,989 @@
+{
+  "as_of": "2026-10-27",
+  "note": "规范链接与课程对应索引；不镜像第三方文章全文。相同文章可对应多课，不能按本记录数统计独立作者或原文篇数。",
+  "records": [
+    {
+      "record_id": "web_second_pass_math_2",
+      "course_ids": [
+        "C0102"
+      ],
+      "teacher": "谢启鸿",
+      "term": "2025秋（25级）",
+      "source_type": "教师公开考核统计",
+      "source_label": "博客园（谢启鸿高等代数官方博客；教师课程分析） · 《复旦大学2025—2026学年第一学期高等代数I期末考试情况分析》 · 2026-01-14",
+      "canonical_url": "https://www.cnblogs.com/torsor/p/19479940",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "web_second_pass_math_3",
+      "course_ids": [
+        "C0103"
+      ],
+      "teacher": "谢启鸿",
+      "term": "2023春（22级）",
+      "source_type": "教师公开考核统计",
+      "source_label": "博客园（谢启鸿高等代数官方博客；教师课程分析） · 《复旦大学2022—2023学年第二学期高等代数II期末考试情况分析》 · 2023-06-27",
+      "canonical_url": "https://www.cnblogs.com/torsor/p/17507679.html",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "web_second_pass_math_4",
+      "course_ids": [
+        "C0103"
+      ],
+      "teacher": "谢启鸿",
+      "term": "2021春（20级；含转专业学生）",
+      "source_type": "教师公开考核统计",
+      "source_label": "博客园（谢启鸿高等代数官方博客；教师课程分析） · 《复旦大学2020—2021学年第二学期高等代数II期末考试情况分析》 · 2021-07-06",
+      "canonical_url": "https://www.cnblogs.com/torsor/p/14977463.html",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "web_second_pass_math_5",
+      "course_ids": [
+        "C0040"
+      ],
+      "teacher": "楼红卫",
+      "term": "2017秋（面向17级，学期据发布时间推定）",
+      "source_type": "团学联历史经验指南 · 公开转载",
+      "source_label": "复旦大数院帝国（搜狐转载；数院团学联学术部迎新指南） · 《迎新特辑：数院人都是怎么搞学习的（上）—数学分析，楼红卫》 · 2017-09-02",
+      "canonical_url": "https://www.sohu.com/a/169147011_328157",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "web_second_pass_math_6",
+      "course_ids": [
+        "C0039"
+      ],
+      "teacher": "严金海",
+      "term": "2017秋（面向17级，学期据发布时间推定）",
+      "source_type": "团学联历史经验指南 · 公开转载",
+      "source_label": "复旦大数院帝国（搜狐转载；数院团学联学术部迎新指南） · 《迎新特辑：数院人都是怎么搞学习的（上）—数学分析，严金海》 · 2017-09-02",
+      "canonical_url": "https://www.sohu.com/a/169147011_328157",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "web_second_pass_math_7",
+      "course_ids": [
+        "C0102"
+      ],
+      "teacher": "朱胜林",
+      "term": "2017秋（面向17级，学期据发布时间推定）",
+      "source_type": "团学联历史经验指南 · 公开转载",
+      "source_label": "复旦大数院帝国（搜狐转载；数院团学联学术部迎新指南） · 《迎新特辑：数院人都是怎么搞学习的（上）—高等代数，朱胜林》 · 2017-09-02",
+      "canonical_url": "https://www.sohu.com/a/169147011_328157",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "web_second_pass_math_8",
+      "course_ids": [
+        "C0102"
+      ],
+      "teacher": "谢启鸿",
+      "term": "2017秋（面向17级，学期据发布时间推定）",
+      "source_type": "团学联历史经验指南 · 公开转载",
+      "source_label": "复旦大数院帝国（搜狐转载；数院团学联学术部迎新指南） · 《迎新特辑：数院人都是怎么搞学习的（上）—高等代数，谢启鸿》 · 2017-09-02",
+      "canonical_url": "https://www.sohu.com/a/169147011_328157",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "zhihu_wu",
+      "course_ids": [
+        "C0039"
+      ],
+      "teacher": "吴昊",
+      "term": "作者自称25级大一回顾；2026-08-23更新，开头时间另写2025.8",
+      "source_type": "知乎学生亲历与平行班观察",
+      "source_label": "maths explorer · 《在复旦数学系就读是一种怎样的体验？》回答 · 更新于2026-08-23",
+      "canonical_url": "https://www.zhihu.com/question/55447039/answer/2074557114039660649",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "zhihu_liang",
+      "course_ids": [
+        "C0039"
+      ],
+      "teacher": "梁振国",
+      "term": "作者自称25级大一回顾；2026-08-23更新，开头时间另写2025.8",
+      "source_type": "知乎学生亲历与平行班观察",
+      "source_label": "maths explorer · 《在复旦数学系就读是一种怎样的体验？》回答 · 更新于2026-08-23",
+      "canonical_url": "https://www.zhihu.com/question/55447039/answer/2074557114039660649",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "zhihu_xie",
+      "course_ids": [
+        "C0102",
+        "C0103"
+      ],
+      "teacher": "谢启鸿",
+      "term": "作者自称25级大一回顾；2026-08-23更新，开头时间另写2025.8",
+      "source_type": "知乎学生亲历与平行班观察",
+      "source_label": "maths explorer · 《在复旦数学系就读是一种怎样的体验？》回答 · 更新于2026-08-23",
+      "canonical_url": "https://www.zhihu.com/question/55447039/answer/2074557114039660649",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "zhihu_yangling",
+      "course_ids": [
+        "C0092"
+      ],
+      "teacher": "杨翎",
+      "term": "作者自称25级大一回顾；2026-08-23更新，开头时间另写2025.8",
+      "source_type": "知乎学生亲历与平行班观察",
+      "source_label": "maths explorer · 《在复旦数学系就读是一种怎样的体验？》回答 · 更新于2026-08-23",
+      "canonical_url": "https://www.zhihu.com/question/55447039/answer/2074557114039660649",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs-07-01",
+      "course_ids": [
+        "U1681"
+      ],
+      "teacher": "陈晓伟",
+      "term": "春季学期；年份未注明",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "卡西莫多0812 · 《复旦大学新生指西：学习篇》 · 配图第7张",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6a8168ac000000002c0051ba",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs-07-02",
+      "course_ids": [
+        "U1678"
+      ],
+      "teacher": "吴晓群",
+      "term": "未注明",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "卡西莫多0812 · 《复旦大学新生指西：学习篇》 · 配图第7张",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6a8168ac000000002c0051ba",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs-07-03",
+      "course_ids": [
+        "R0928"
+      ],
+      "teacher": null,
+      "term": "未注明",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "卡西莫多0812 · 《复旦大学新生指西：学习篇》 · 配图第7张",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6a8168ac000000002c0051ba",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs-07-04",
+      "course_ids": [
+        "U1679"
+      ],
+      "teacher": "徐贤樑",
+      "term": "未注明",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "卡西莫多0812 · 《复旦大学新生指西：学习篇》 · 配图第7张",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6a8168ac000000002c0051ba",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs-07-06",
+      "course_ids": [
+        "C0358"
+      ],
+      "teacher": null,
+      "term": "未注明",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "卡西莫多0812 · 《复旦大学新生指西：学习篇》 · 配图第7张",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6a8168ac000000002c0051ba",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs-10-01",
+      "course_ids": [
+        "U1732"
+      ],
+      "teacher": null,
+      "term": "未注明",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "卡西莫多0812 · 《复旦大学新生指西：学习篇》 · 配图第10张",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6a8168ac000000002c0051ba",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs-10-02",
+      "course_ids": [
+        "R0931"
+      ],
+      "teacher": null,
+      "term": "未注明",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "卡西莫多0812 · 《复旦大学新生指西：学习篇》 · 配图第10张",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6a8168ac000000002c0051ba",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs-09-01",
+      "course_ids": [
+        "R0935"
+      ],
+      "teacher": null,
+      "term": "作者为2024级；修读学期未注明",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "卡西莫多0812 · 《复旦大学新生指西：学习篇》 · 配图第9张",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6a8168ac000000002c0051ba",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs-09-04",
+      "course_ids": [
+        "R0938"
+      ],
+      "teacher": null,
+      "term": "未注明",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "卡西莫多0812 · 《复旦大学新生指西：学习篇》 · 配图第9张",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6a8168ac000000002c0051ba",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs-09-05",
+      "course_ids": [
+        "U1718"
+      ],
+      "teacher": null,
+      "term": "未注明",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "卡西莫多0812 · 《复旦大学新生指西：学习篇》 · 配图第9张",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6a8168ac000000002c0051ba",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs-09-06",
+      "course_ids": [
+        "U1725"
+      ],
+      "teacher": null,
+      "term": "未注明",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "卡西莫多0812 · 《复旦大学新生指西：学习篇》 · 配图第9张",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6a8168ac000000002c0051ba",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs-11-01",
+      "course_ids": [
+        "R0964"
+      ],
+      "teacher": null,
+      "term": "大一；公历年份未注明",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "卡西莫多0812 · 《复旦大学新生指西：学习篇》 · 配图第11张",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6a8168ac000000002c0051ba",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "15-01",
+      "course_ids": [
+        "R0971"
+      ],
+      "teacher": "多位教师（共13人，截图未列姓名）",
+      "term": "2025级课程（具体学期未注明）",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "卡西莫多0812 · 《复旦大学新生指西：学习篇》 · 配图第15张",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6a8168ac000000002c0051ba",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "16-01",
+      "course_ids": [
+        "U1678"
+      ],
+      "teacher": "戎恒颖",
+      "term": "未注明",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "卡西莫多0812 · 《复旦大学新生指西：学习篇》 · 配图第16张",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6a8168ac000000002c0051ba",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "16-02",
+      "course_ids": [
+        "U1678"
+      ],
+      "teacher": "王兴",
+      "term": "大一上（年份未注明）",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "卡西莫多0812 · 《复旦大学新生指西：学习篇》 · 配图第16张",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6a8168ac000000002c0051ba",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "16-03",
+      "course_ids": [
+        "U1678"
+      ],
+      "teacher": "吴晓群",
+      "term": "大一下（年份未注明）",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "卡西莫多0812 · 《复旦大学新生指西：学习篇》 · 配图第16张",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6a8168ac000000002c0051ba",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "18-01",
+      "course_ids": [
+        "R0972"
+      ],
+      "teacher": "未注明",
+      "term": "大三上（年份未注明）",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "卡西莫多0812 · 《复旦大学新生指西：学习篇》 · 配图第18张",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6a8168ac000000002c0051ba",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs-roy-slide-02",
+      "course_ids": [
+        "C0017"
+      ],
+      "teacher": null,
+      "term": "未知（笔记发表于2025-03-20，未说明修读学期）",
+      "source_type": "小红书笔记（配图课评）",
+      "source_label": "努力闪闪发光的roy酱 · 小红书《复旦数院｜一段话锐评课程……》配图2/10",
+      "canonical_url": "https://www.xiaohongshu.com/explore/67dc0765000000000603cd6f",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs-roy-slide-03",
+      "course_ids": [
+        "C0013"
+      ],
+      "teacher": null,
+      "term": "未知（笔记发表于2025-03-20，未说明修读学期）",
+      "source_type": "小红书笔记（配图课评）",
+      "source_label": "努力闪闪发光的roy酱 · 小红书《复旦数院｜一段话锐评课程……》配图3/10",
+      "canonical_url": "https://www.xiaohongshu.com/explore/67dc0765000000000603cd6f",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs_julie_ds_2025",
+      "course_ids": [
+        "C0116",
+        "X0815"
+      ],
+      "teacher": "zyj（推定为张玥杰）",
+      "term": "未注明；文章发表于2025-01-04，作者评论称约一年半前修读，具体学期不明",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "诗情画怡Julie ·《复旦大二｜文科生也可以在数据结构课上拿A》· 2025-01-04 · 正文及配图1–5",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6778eb56000000000b020049",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs_ideology_overall_2026",
+      "course_ids": [
+        "C0878",
+        "C0484",
+        "C0215",
+        "C0233",
+        "C0605"
+      ],
+      "teacher": "未指定",
+      "term": "未注明",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "江昀没睡醒 ·《复旦思政必修课选课&上课思路分享》· 09-09（#2026开学季）· 正文",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6aa118b50000000026017eac",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs_ideology_summer_marx_2026",
+      "course_ids": [
+        "C0878"
+      ],
+      "teacher": "myj（姓名未确认）",
+      "term": "暑期；年份未注明（帖子发表于09-09，标注#2026开学季）",
+      "source_type": "小红书个人课程回顾",
+      "source_label": "江昀没睡醒 ·《复旦思政必修课选课&上课思路分享》· 配图第1张及正文",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6aa118b50000000026017eac",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "GECC20026",
+      "course_ids": [
+        "C0148"
+      ],
+      "teacher": "未注明",
+      "term": "未注明（页面编辑01-15，年份未显示）",
+      "source_type": "小红书个人通识课回顾",
+      "source_label": "春天的一枝lily · 《这些年在复旦上过的通识课》 · 配图第2–5张及第1张成绩卡",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6968cfb9000000001a03459a",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "GECC20031",
+      "course_ids": [
+        "C0455"
+      ],
+      "teacher": "未注明",
+      "term": "未注明（页面编辑01-15，年份未显示）",
+      "source_type": "小红书个人通识课回顾",
+      "source_label": "春天的一枝lily · 《这些年在复旦上过的通识课》 · 配图第6–7张及第1张成绩卡",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6968cfb9000000001a03459a",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "GECC10039",
+      "course_ids": [
+        "C0862"
+      ],
+      "teacher": "包春雷",
+      "term": "未注明（页面编辑01-15，年份未显示）",
+      "source_type": "小红书个人通识课回顾",
+      "source_label": "春天的一枝lily · 《这些年在复旦上过的通识课》 · 配图第10张及第1张成绩卡",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6968cfb9000000001a03459a",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "H0001",
+      "course_ids": [
+        "H0001"
+      ],
+      "teacher": "侯体健",
+      "term": "未注明（页面编辑01-15，年份未显示）",
+      "source_type": "小红书个人通识课回顾",
+      "source_label": "春天的一枝lily · 《这些年在复旦上过的通识课》 · 配图第12–13张及第1张成绩卡",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6968cfb9000000001a03459a",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs-kafka-2024-spring",
+      "course_ids": [
+        "H0002"
+      ],
+      "teacher": "李双志",
+      "term": "2024春（作者自述该学期新开并亲历）",
+      "source_type": "小红书笔记（作者个人修读长评）",
+      "source_label": "橙黄橘绿_ · 小红书《复旦课评丨卡夫卡与全球现代性》· 正文/配图1–8 · 2024-11-23",
+      "canonical_url": "https://www.xiaohongshu.com/explore/67408ba7000000000800692b",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs_sunmoon_art",
+      "course_ids": [
+        "C0228"
+      ],
+      "teacher": "zj（原文缩写）",
+      "term": "2025春（据发文时的“上学期”推定）",
+      "source_type": "小红书个人修读回顾",
+      "source_label": "日&月 · 《我在复旦上过的那些课之通识课篇》 · 2025-09-04",
+      "canonical_url": "https://www.xiaohongshu.com/explore/68b8f54f000000001c01269a",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "xhs_sunmoon_metaverse",
+      "course_ids": [
+        "C0567"
+      ],
+      "teacher": "zx（原文缩写）",
+      "term": "2025春（据发文时的“上学期”推定）",
+      "source_type": "小红书个人修读回顾",
+      "source_label": "日&月 · 《我在复旦上过的那些课之通识课篇》 · 2025-09-04",
+      "canonical_url": "https://www.xiaohongshu.com/explore/68b8f54f000000001c01269a",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "zhihu_luni_ta",
+      "course_ids": [
+        "C0040",
+        "C0042"
+      ],
+      "teacher": "楼红卫",
+      "term": "2024秋起的数学分析I英才班；2025春更新",
+      "source_type": "知乎助教教学说明",
+      "source_label": "Lunifans · 《复旦等顶尖学府的数学分析习题课是怎么上的？》",
+      "canonical_url": "https://www.zhihu.com/question/41635456/answer/68902201162",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "zhihu_afsd_complex",
+      "course_ids": [
+        "C0013"
+      ],
+      "teacher": "沈维孝",
+      "term": "本科历史课程；回答更新2024-12-30，具体修读年份未标",
+      "source_type": "知乎学生个人修读回顾",
+      "source_label": "afsd · 《国内大学数学系都上什么课程？》",
+      "canonical_url": "https://www.zhihu.com/question/28194153/answer/3177799199",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "zhihu_afsd_number",
+      "course_ids": [
+        "C0056"
+      ],
+      "teacher": "石荣刚",
+      "term": "本科历史课程；回答更新2024-12-30，具体修读年份未标",
+      "source_type": "知乎学生个人修读回顾",
+      "source_label": "afsd · 《国内大学数学系都上什么课程？》",
+      "canonical_url": "https://www.zhihu.com/question/28194153/answer/3177799199",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "zhihu_afsd_lie",
+      "course_ids": [
+        "C0061"
+      ],
+      "teacher": "杨翎",
+      "term": "本科历史课程；回答更新2024-12-30，具体修读年份未标",
+      "source_type": "知乎学生个人修读回顾",
+      "source_label": "afsd · 《国内大学数学系都上什么课程？》",
+      "canonical_url": "https://www.zhihu.com/question/28194153/answer/3177799199",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "zhihu_afsd_surface",
+      "course_ids": [
+        "C0112"
+      ],
+      "teacher": "陈伯勇",
+      "term": "本科历史课程；回答更新2024-12-30，具体修读年份未标",
+      "source_type": "知乎学生个人修读回顾",
+      "source_label": "afsd · 《国内大学数学系都上什么课程？》",
+      "canonical_url": "https://www.zhihu.com/question/28194153/answer/3177799199",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "zhihu_afsd_functional",
+      "course_ids": [
+        "C0109"
+      ],
+      "teacher": "郭坤宇",
+      "term": "本科历史课程；回答更新2024-12-30，具体修读年份未标",
+      "source_type": "知乎学生个人修读回顾",
+      "source_label": "afsd · 《国内大学数学系都上什么课程？》",
+      "canonical_url": "https://www.zhihu.com/question/28194153/answer/3177799199",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "zhihu_afsd_analysis",
+      "course_ids": [
+        "C0074"
+      ],
+      "teacher": "贺丹青",
+      "term": "本科历史课程；回答更新2024-12-30，具体修读年份未标",
+      "source_type": "知乎学生个人修读回顾",
+      "source_label": "afsd · 《国内大学数学系都上什么课程？》",
+      "canonical_url": "https://www.zhihu.com/question/28194153/answer/3177799199",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "zhihu_shuxue_real",
+      "course_ids": [
+        "C0017"
+      ],
+      "teacher": null,
+      "term": "已毕业普通班本科回顾；更新2026-02-04，修读年份未逐课标注",
+      "source_type": "知乎学生个人修读回顾",
+      "source_label": "漱雪 · 《在复旦数学系就读是一种怎样的体验？》",
+      "canonical_url": "https://www.zhihu.com/question/55447039/answer/1923790303963362292",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "zhihu_shuxue_functional",
+      "course_ids": [
+        "C0067"
+      ],
+      "teacher": null,
+      "term": "已毕业普通班本科回顾；更新2026-02-04，修读年份未逐课标注",
+      "source_type": "知乎学生个人修读回顾",
+      "source_label": "漱雪 · 《在复旦数学系就读是一种怎样的体验？》",
+      "canonical_url": "https://www.zhihu.com/question/55447039/answer/1923790303963362292",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "zhihu_shuxue_model",
+      "course_ids": [
+        "C0049"
+      ],
+      "teacher": null,
+      "term": "已毕业普通班本科回顾；更新2026-02-04，修读年份未逐课标注",
+      "source_type": "知乎学生个人修读回顾",
+      "source_label": "漱雪 · 《在复旦数学系就读是一种怎样的体验？》",
+      "canonical_url": "https://www.zhihu.com/question/55447039/answer/1923790303963362292",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "zhihu_shuxue_ode",
+      "course_ids": [
+        "C0021"
+      ],
+      "teacher": null,
+      "term": "已毕业普通班本科回顾；更新2026-02-04，修读年份未逐课标注",
+      "source_type": "知乎学生个人修读回顾",
+      "source_label": "漱雪 · 《在复旦数学系就读是一种怎样的体验？》",
+      "canonical_url": "https://www.zhihu.com/question/55447039/answer/1923790303963362292",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "zhihu_shuxue_geometry",
+      "course_ids": [
+        "C0023"
+      ],
+      "teacher": null,
+      "term": "已毕业普通班本科回顾；更新2026-02-04，修读年份未逐课标注",
+      "source_type": "知乎学生个人修读回顾",
+      "source_label": "漱雪 · 《在复旦数学系就读是一种怎样的体验？》",
+      "canonical_url": "https://www.zhihu.com/question/55447039/answer/1923790303963362292",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "zhihu_wujs_music",
+      "course_ids": [
+        "C0161"
+      ],
+      "teacher": "花白",
+      "term": "2018-07-18发布的本科历史回顾",
+      "source_type": "知乎学生个人修读回顾",
+      "source_label": "wujs0226 · 《你在复旦大学学了哪些课？评价怎样？》",
+      "canonical_url": "https://www.zhihu.com/question/285830068/answer/445933647",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "zhihu_zhang_ics",
+      "course_ids": [
+        "C0121",
+        "X0814"
+      ],
+      "teacher": null,
+      "term": "2013级软件工程、2017届；2019-06-12回顾",
+      "source_type": "知乎学生个人修读回顾",
+      "source_label": "张振衣 · 《复旦大学的软件工程专业如何？课程设置是怎样的？》",
+      "canonical_url": "https://www.zhihu.com/question/327633784/answer/712586848",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "continuation_zhihu_ben_stochastic",
+      "course_ids": [
+        "C0099"
+      ],
+      "teacher": "薛军工",
+      "term": "约2022秋（按2020级、大三上推定）；2020级数理经济班大三上回顾，2023-01-07更新",
+      "source_type": "知乎学生个人修读回顾",
+      "source_label": "BenChong5288 · 《在复旦大学数理经济方向就读是怎样一种体验？》 · 更新2023-01-07",
+      "canonical_url": "https://www.zhihu.com/question/30937545/answer/2305398139",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "continuation_zhihu_ben_ode",
+      "course_ids": [
+        "C0025"
+      ],
+      "teacher": "吴昊",
+      "term": "2022春数理经济班；疫情线上特殊学期",
+      "source_type": "知乎学生个人修读回顾",
+      "source_label": "BenChong5288 · 《在复旦大学数理经济方向就读是怎样一种体验？》 · 更新2023-01-07",
+      "canonical_url": "https://www.zhihu.com/question/30937545/answer/2305398139",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "continuation_zhihu_ben_timeseries",
+      "course_ids": [
+        "R0984"
+      ],
+      "teacher": "王晓虎",
+      "term": "约2022秋（按2020级、大三上推定）数理经济班；2023-01-07更新",
+      "source_type": "知乎学生个人修读回顾",
+      "source_label": "BenChong5288 · 《在复旦大学数理经济方向就读是怎样一种体验？》 · 更新2023-01-07",
+      "canonical_url": "https://www.zhihu.com/question/30937545/answer/2305398139",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "continuation_zhihu_ben_game",
+      "course_ids": [
+        "R0982"
+      ],
+      "teacher": "李婷",
+      "term": "约2021秋（按2020级、大二上推定）数理经济班；2023-01-07更新",
+      "source_type": "知乎学生个人修读回顾",
+      "source_label": "BenChong5288 · 《在复旦大学数理经济方向就读是怎样一种体验？》 · 更新2023-01-07",
+      "canonical_url": "https://www.zhihu.com/question/30937545/answer/2305398139",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "batch2_zhihu_bible_liuping",
+      "course_ids": [
+        "C0455"
+      ],
+      "teacher": "刘平",
+      "term": "2023-10-30发表回顾；修读学期未标",
+      "source_type": "公开学生课评",
+      "source_label": "知乎 · 其实就怎样过生活 · 2023-10-30 ·《大学有哪些好过的公选课？》",
+      "canonical_url": "https://www.zhihu.com/question/406062503/answer/3270298349",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "batch2_zhihu_psych_gaojun",
+      "course_ids": [
+        "U1725"
+      ],
+      "teacher": "高隽",
+      "term": "2016-06-08更新；具体修读学期未标",
+      "source_type": "公开学生课评",
+      "source_label": "知乎 · Danlu · 2016-06-08 ·《复旦有哪些好老师？》",
+      "canonical_url": "https://www.zhihu.com/question/20770945/answer/38611516",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "batch2_zhihu_statistics_buxing",
+      "course_ids": [
+        "C0055"
+      ],
+      "teacher": "未确认",
+      "term": "2019-06-14更新的历史回顾",
+      "source_type": "公开学生课评",
+      "source_label": "知乎 · 布形 · 2019-06-14 ·《复旦大学的数学与应用数学专业怎么样？师资力量如何？》",
+      "canonical_url": "https://www.zhihu.com/question/327633793/answer/711754331",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "batch2_zhihu_python_liuhui",
+      "course_ids": [
+        "C0137"
+      ],
+      "teacher": "刘卉",
+      "term": "2022-09-06发表；修读学期未标",
+      "source_type": "公开学生课评",
+      "source_label": "知乎 · 山寨 · 2022-09-06 ·《复旦大学程序设计老师有哪些推荐？》",
+      "canonical_url": "https://www.zhihu.com/question/551311143/answer/2662561770",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "batch2_wechat_film_1",
+      "course_ids": [
+        "C0220"
+      ],
+      "teacher": "龚金平",
+      "term": "2019-02-27发布的历史课评；修读学期未标",
+      "source_type": "微信公众号公开学生课评汇集",
+      "source_label": "微信公众号 · 复旦爱电影 · 草鸡 ·《复旦电影类课程测评》· 2019-02-27",
+      "canonical_url": "",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "batch2_wechat_film_2",
+      "course_ids": [
+        "C0599"
+      ],
+      "teacher": "朱建新、孔婧倩",
+      "term": "2019-02-27发布的历史课评；修读学期未标",
+      "source_type": "微信公众号公开学生课评汇集",
+      "source_label": "微信公众号 · 复旦爱电影 · 草鸡 ·《复旦电影类课程测评》· 2019-02-27",
+      "canonical_url": "",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "batch2_wechat_film_3",
+      "course_ids": [
+        "C0473"
+      ],
+      "teacher": "吴晓真",
+      "term": "2019-02-27发布的历史课评；修读学期未标",
+      "source_type": "微信公众号公开学生课评汇集",
+      "source_label": "微信公众号 · 复旦爱电影 · 草鸡 ·《复旦电影类课程测评》· 2019-02-27",
+      "canonical_url": "",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "batch2_wechat_film_4",
+      "course_ids": [
+        "C0474"
+      ],
+      "teacher": "龚金平",
+      "term": "2019-02-27发布的历史课评；修读学期未标",
+      "source_type": "微信公众号公开学生课评汇集",
+      "source_label": "微信公众号 · 复旦爱电影 · 草鸡 ·《复旦电影类课程测评》· 2019-02-27",
+      "canonical_url": "",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "batch2_wechat_film_5",
+      "course_ids": [
+        "C0472"
+      ],
+      "teacher": "高燕",
+      "term": "2019-02-27发布的历史课评；修读学期未标",
+      "source_type": "微信公众号公开学生课评汇集",
+      "source_label": "微信公众号 · 复旦爱电影 · 草鸡 ·《复旦电影类课程测评》· 2019-02-27",
+      "canonical_url": "",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "deep_xhs_barca_lou_first_2025",
+      "course_ids": [
+        "C0040"
+      ],
+      "teacher": "楼红卫",
+      "term": "2025秋开学首课体验（2025-09-08发布）",
+      "source_type": "小红书公开修读笔记",
+      "source_label": "小红书 · Barça ·《复旦大一·楼分析初体验》· 2025-09-08",
+      "canonical_url": "https://www.xiaohongshu.com/explore/68be5eb8000000001c0348ee",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "deep_zhihu_xiexilin_2020_online",
+      "course_ids": [
+        "U1650"
+      ],
+      "teacher": "谢锡麟",
+      "term": "2020春网课回顾（2020-07-14发布）",
+      "source_type": "知乎公开学生课评",
+      "source_label": "知乎 · 极大理想还没平凡 ·《复旦大学谢锡麟老师数分？》· 2020-07-14",
+      "canonical_url": "https://www.zhihu.com/question/364656283/answer/1337042056",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "deep_zhihu_model_reform_2020",
+      "course_ids": [
+        "C0049"
+      ],
+      "teacher": "未确认",
+      "term": "2020春在读记录（2020-03-28发布）",
+      "source_type": "知乎公开学生在读回顾",
+      "source_label": "知乎 · 旅游者 ·《复旦数学与中科大物理/数学如何选择？》· 2020-03-28",
+      "canonical_url": "https://www.zhihu.com/question/382899242/answer/1111021718",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "summer_xhs_movie_6865326f",
+      "course_ids": [
+        "C0822"
+      ],
+      "teacher": null,
+      "term": "2025暑期；笔记编辑于2025-07-02",
+      "source_type": "小红书个人暑期修读回顾",
+      "source_label": "小红书 · 一粒rui啵 ·《复旦暑期课｜走进电影世界🎬》·2025-07-02",
+      "canonical_url": "https://www.xiaohongshu.com/explore/6865326f000000001d00d972",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "chat_MATH25_P00368_AIB110002",
+      "course_ids": [
+        "C0137"
+      ],
+      "teacher": null,
+      "term": "2025秋（对话在2026-04-14明确称“上学期”）",
+      "source_type": "微信群匿名聊天",
+      "source_label": "年级群 · 孵蛋25数学 · 2026-04-14 · 匿名交流",
+      "canonical_url": "",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "chat_CAICAI_P00124_AIB210002",
+      "course_ids": [
+        "C0245"
+      ],
+      "teacher": null,
+      "term": "2026春（对话在2026-04-25，课程当学期进行中）",
+      "source_type": "微信群匿名聊天",
+      "source_label": "年级群 · 菜菜，捞捞 · 2026-04-25 · 匿名交流",
+      "canonical_url": "",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "chat_CAICAI_P00154_AIB310003",
+      "course_ids": [
+        "C0629"
+      ],
+      "teacher": "孙晓光",
+      "term": "2026春（2026-05-22课堂体验）",
+      "source_type": "微信群匿名聊天",
+      "source_label": "年级群 · 菜菜，捞捞 · 2026-05-22 · 匿名交流",
+      "canonical_url": "",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    },
+    {
+      "record_id": "chat_CAICAI_P00162_AIB110001_assignment",
+      "course_ids": [
+        "C0133"
+      ],
+      "teacher": null,
+      "term": "2026春（2026-06-16大作业讨论）",
+      "source_type": "微信群匿名聊天",
+      "source_label": "年级群 · 菜菜，捞捞 · 2026-06-16 · 匿名交流",
+      "canonical_url": "",
+      "record_status": "existing_curated_record_verify_original_before_expansion",
+      "fulltext_permission": "not_granted_by_this_index"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "as_of": "2026-10-27",
+  "website_entries": 1273,
+  "unique_course_codes": 1269,
+  "code_name_collisions": [
+    {
+      "course_code": "GEMH20001",
+      "course_ids": [
+        "C0252",
+        "C0253"
+      ],
+      "names": [
+        "从公共卫生视⻆看心理健康",
+        "从公共卫生视角看心理健康"
+      ],
+      "status": "pending_normalization_review",
+      "note": "OCR字符或空格差异候选；任务合并认领，网站原数据暂不改动。"
+    },
+    {
+      "course_code": "GEEC20050",
+      "course_ids": [
+        "C0394",
+        "C0395"
+      ],
+      "names": [
+        "多学科视⻆的全球卫生",
+        "多学科视角的全球卫生"
+      ],
+      "status": "pending_normalization_review",
+      "note": "OCR字符或空格差异候选；任务合并认领，网站原数据暂不改动。"
+    },
+    {
+      "course_code": "CHEM20014",
+      "course_ids": [
+        "U1659",
+        "R0953"
+      ],
+      "names": [
+        "有机化学A II",
+        "有机化学AII"
+      ],
+      "status": "pending_normalization_review",
+      "note": "OCR字符或空格差异候选；任务合并认领，网站原数据暂不改动。"
+    },
+    {
+      "course_code": "CHEM20013",
+      "course_ids": [
+        "U1733",
+        "R0992"
+      ],
+      "names": [
+        "有机化学A I",
+        "有机化学AI"
+      ],
+      "status": "pending_normalization_review",
+      "note": "OCR字符或空格差异候选；任务合并认领，网站原数据暂不改动。"
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "as_of": "2026-10-27",
+  "note": "来源和工具登记，不代表每项都已成功读取或已完成全校覆盖。私人来源不存账号、群成员或消息身份。",
+  "sources": [
+    {
+      "id": "danxi",
+      "type": "社区与客户端",
+      "url": "https://danxi.fduhole.com/",
+      "purpose": "普通帖子和蛋壳课评；与官方政策分开",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "treehole",
+      "type": "普通帖子",
+      "url": "https://www.fduhole.com/",
+      "purpose": "课程讨论、备考、给分、问课和实修体验",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "danke",
+      "type": "课评专区",
+      "url": "https://danke.fduhole.com/",
+      "purpose": "逐课逐教师逐学期课评",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "fdjwgl",
+      "type": "官方教务",
+      "url": "https://fdjwgl.fudan.edu.cn/student/home",
+      "purpose": "开课、教学班、大纲、人数和容量",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "programs",
+      "type": "官方培养方案",
+      "url": "https://fdjwgl.fudan.edu.cn/manager/bizType/2/page-center/major-program-search-view?skipAuth=1",
+      "purpose": "公共方案＋所选专业方案，按入学年级区分",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "jwc",
+      "type": "官方规则",
+      "url": "https://jwc.fudan.edu.cn/",
+      "purpose": "选课、成绩、培养、认定与暑期教学",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "jwc-user-supplement",
+      "type": "用户指定官方资料",
+      "url": "https://jwc.fudan.edu.cn/5c/42/c51837a744514/page.psp",
+      "purpose": "补充规则；访问可能跳转认证",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "jwc-summer",
+      "type": "暑期教学",
+      "url": "https://jwc.fudan.edu.cn/f3/ce/c25325a783310/page.psp",
+      "purpose": "2026暑期课程与认定通知",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "math",
+      "type": "院系规则",
+      "url": "https://math.fudan.edu.cn/",
+      "purpose": "数院培养、奖学金、推免和项目",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "zhihu-user-answer",
+      "type": "用户指定知乎回答",
+      "url": "https://www.zhihu.com/question/55447039/answer/2074557114039660649",
+      "purpose": "完整回答按单课拆解；公开摘要及链接",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "xhs-user-profile",
+      "type": "用户指定小红书主页",
+      "url": "https://www.xiaohongshu.com/user/profile/61ac0c9d000000000201d1da",
+      "purpose": "主页、笔记正文、全部配图与必要评论；已去签名参数",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "wechat-search",
+      "type": "公众号检索",
+      "url": "https://weixin.sogou.com/",
+      "purpose": "搜到文章卡片后核对原文；不是完整召回保证",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "wechat-articles",
+      "type": "公众号原文",
+      "url": "https://mp.weixin.qq.com/",
+      "purpose": "作者、标题、日期、课程与图文页码",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "sharing",
+      "type": "课程资料",
+      "url": "https://github.com/victkk/FDU-Sharing",
+      "purpose": "固定版本资料索引，保留上游许可",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "projects",
+      "type": "课程项目资料",
+      "url": "https://github.com/chenran-627/Projects-in-Fudan",
+      "purpose": "可比较课程项目与资料，不等同于学生课评",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "danxi-code",
+      "type": "官方客户端源码",
+      "url": "https://github.com/DanXi-Dev/DanXi",
+      "purpose": "核验客户端与来源说明",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "treehole-code",
+      "type": "服务端源码",
+      "url": "https://github.com/OpenTreeHole/treehole_next",
+      "purpose": "核验分页、搜索和时间语义",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "danta-mcp",
+      "type": "已核查工具",
+      "url": "https://github.com/likangxian1007/danta-mcp",
+      "purpose": "专题搜索、逐帖读取、引证报告；检查截断和分页限制",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "danxi-fetcher",
+      "type": "已核查工具",
+      "url": "https://github.com/JackeryTU/Danxi-fetcher",
+      "purpose": "已知洞号分页导出；检查默认上限",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "hot-topics",
+      "type": "热帖工具线索",
+      "url": "https://github.com/Qholmes2000/danxi-hot-topics",
+      "purpose": "热帖采样不能代替课程穷尽搜索",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "daily-skill",
+      "type": "日报工具线索",
+      "url": "https://github.com/0patsick0/danxi-daily-skill",
+      "purpose": "热度和日报，不自动构成主题阅读",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "wechat-mcp",
+      "type": "候选公众号工具",
+      "url": "https://github.com/odyecho/mcp-server-wechat",
+      "purpose": "历史代码检查；不能声称已完成安装或完整正文采集验证",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "wechat-research",
+      "type": "候选公众号工具",
+      "url": "https://github.com/jinye5474/wechat-article-research",
+      "purpose": "历史代码检查；检索提供者和正文获取另行验证",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "agreement",
+      "type": "来源许可与访问条款",
+      "url": "https://danxi.fduhole.com/doc/community-user-agreement",
+      "purpose": "2026-10-27重新核对；作者声明优先，访问限制与文本许可分别遵守",
+      "status": "historical_source_or_tool_reference_not_universal_current_access_guarantee"
+    },
+    {
+      "id": "official-reference-25",
+      "type": "既有整理中的官方具体页面",
+      "url": "https://jwc.fudan.edu.cn/ff/26/c27268a786214/page.htm",
+      "purpose": "对应制度名称和适用版本见原网站数据及研究文档",
+      "provenance_file": "public/data/rules.json",
+      "status": "historical_saved_reference_recheck_when_using"
+    },
+    {
+      "id": "official-reference-26",
+      "type": "既有整理中的官方具体页面",
+      "url": "https://jwc.fudan.edu.cn/_upload/article/files/6a/c9/cf40ec274f18b63f3dd605052aa5/c59ccd23-256e-43f3-88a6-4be7a597e3f9.pdf",
+      "purpose": "对应制度名称和适用版本见原网站数据及研究文档",
+      "provenance_file": "public/data/rules.json",
+      "status": "historical_saved_reference_recheck_when_using"
+    },
+    {
+      "id": "official-reference-27",
+      "type": "既有整理中的官方具体页面",
+      "url": "https://jwc.fudan.edu.cn/d6/97/c25325a775831/page.htm",
+      "purpose": "对应制度名称和适用版本见原网站数据及研究文档",
+      "provenance_file": "public/data/rules.json",
+      "status": "historical_saved_reference_recheck_when_using"
+    },
+    {
+      "id": "official-reference-28",
+      "type": "既有整理中的官方具体页面",
+      "url": "https://jwc.fudan.edu.cn/0b/3c/c27273a789308/page.htm",
+      "purpose": "对应制度名称和适用版本见原网站数据及研究文档",
+      "provenance_file": "public/data/rules.json",
+      "status": "historical_saved_reference_recheck_when_using"
+    },
+    {
+      "id": "official-reference-29",
+      "type": "既有整理中的官方具体页面",
+      "url": "https://jwc.fudan.edu.cn/0e/ab/c25325a790187/page.htm",
+      "purpose": "对应制度名称和适用版本见原网站数据及研究文档",
+      "provenance_file": "public/data/rules.json",
+      "status": "historical_saved_reference_recheck_when_using"
+    },
+    {
+      "id": "official-reference-30",
+      "type": "既有整理中的官方具体页面",
+      "url": "https://jwc.fudan.edu.cn/1b/cc/c25325a793548/page.htm",
+      "purpose": "对应制度名称和适用版本见原网站数据及研究文档",
+      "provenance_file": "public/data/rules.json",
+      "status": "historical_saved_reference_recheck_when_using"
+    },
+    {
+      "id": "official-reference-31",
+      "type": "既有整理中的官方具体页面",
+      "url": "https://math.fudan.edu.cn/0b/71/c33035a789361/page.htm",
+      "purpose": "对应制度名称和适用版本见原网站数据及研究文档",
+      "provenance_file": "public/data/rules.json",
+      "status": "historical_saved_reference_recheck_when_using"
+    },
+    {
+      "id": "official-reference-32",
+      "type": "既有整理中的官方具体页面",
+      "url": "https://jwc.fudan.edu.cn/gzdt_27273/list.htm",
+      "purpose": "对应制度名称和适用版本见原网站数据及研究文档",
+      "provenance_file": "public/data/grading.json",
+      "status": "historical_saved_reference_recheck_when_using"
+    },
+    {
+      "id": "official-reference-33",
+      "type": "既有整理中的官方具体页面",
+      "url": "https://jwc.fudan.edu.cn/gzzd/list.htm",
+      "purpose": "对应制度名称和适用版本见原网站数据及研究文档",
+      "provenance_file": "public/data/grading.json",
+      "status": "historical_saved_reference_recheck_when_using"
+    },
+    {
+      "id": "official-reference-34",
+      "type": "既有整理中的官方具体页面",
+      "url": "https://jwc.fudan.edu.cn/_upload/article/files/d4/56/707002a8413b8a3cc690244c1118/95b17a4f-0871-4ac1-96f5-f058a7cdff57.pdf",
+      "purpose": "对应制度名称和适用版本见原网站数据及研究文档",
+      "provenance_file": "public/data/grading.json",
+      "status": "historical_saved_reference_recheck_when_using"
+    },
+    {
+      "id": "official-reference-35",
+      "type": "既有整理中的官方具体页面",
+      "url": "https://jwc.fudan.edu.cn/_upload/article/files/d4/56/707002a8413b8a3cc690244c1118/e36be87a-88a4-49b7-91a3-c5b9dbec072d.pdf",
+      "purpose": "对应制度名称和适用版本见原网站数据及研究文档",
+      "provenance_file": "public/data/grading.json",
+      "status": "historical_saved_reference_recheck_when_using"
+    },
+    {
+      "id": "official-reference-36",
+      "type": "既有整理中的官方具体页面",
+      "url": "https://math.fudan.edu.cn/07/24/c33035a788260/page.htm",
+      "purpose": "对应制度名称和适用版本见原网站数据及研究文档",
+      "provenance_file": "public/data/grading.json",
+      "status": "historical_saved_reference_recheck_when_using"
+    }
+  ],
+  "private_inputs": [
+    {
+      "id": "G01",
+      "label": "FDU2418",
+      "public_policy": "仅必要匿名课评摘要；原档与上下文包不公开"
+    },
+    {
+      "id": "G02",
+      "label": "孵蛋25数学",
+      "public_policy": "仅必要匿名课评摘要；原档与上下文包不公开"
+    },
+    {
+      "id": "G03",
+      "label": "数启新程·26数学聊天群",
+      "public_policy": "仅必要匿名课评摘要；原档与上下文包不公开"
+    },
+    {
+      "id": "G04",
+      "label": "菜菜，捞捞",
+      "public_policy": "仅必要匿名课评摘要；原档与上下文包不公开"
+    },
+    {
+      "id": "G05",
+      "label": "2026级相辉学堂水群",
+      "public_policy": "仅必要匿名课评摘要；原档与上下文包不公开"
+    },
+    {
+      "id": "G06",
+      "label": "24信息2班",
+      "public_policy": "仅必要匿名课评摘要；原档与上下文包不公开"
+    }
+  ]
+}
