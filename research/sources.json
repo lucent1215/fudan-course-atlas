@@ -265,6 +265,303 @@
       "purpose": "对应制度名称和适用版本见原网站数据及研究文档",
       "provenance_file": "public/data/grading.json",
       "status": "historical_saved_reference_recheck_when_using"
+    },
+    {
+      "id": "historical-web-1",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.zhihu.com/question/41635456/answer/68902201162",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/87b26c7330bebb4e2ad2137167fba8925c0be596b2c7ee553745f120c8faea9a.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-2",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.zhihu.com/question/28194153/answer/3177799199",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/87b26c7330bebb4e2ad2137167fba8925c0be596b2c7ee553745f120c8faea9a.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-3",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.zhihu.com/question/55447039/answer/1923790303963362292",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/87b26c7330bebb4e2ad2137167fba8925c0be596b2c7ee553745f120c8faea9a.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-4",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.zhihu.com/question/285830068/answer/445933647",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/87b26c7330bebb4e2ad2137167fba8925c0be596b2c7ee553745f120c8faea9a.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-5",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.zhihu.com/question/327633784/answer/712586848",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/87b26c7330bebb4e2ad2137167fba8925c0be596b2c7ee553745f120c8faea9a.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-6",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.xiaohongshu.com/explore/6aa118b50000000026017eac?xsec_source=pc_search&source=web_explore_feed",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/c602ba5cf8d692ccf9bdb5bbaf05782278116290029ac7efb5fa7c922a3ad88a.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-7",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.xiaohongshu.com/explore/6778eb56000000000b020049?xsec_source=pc_search&source=web_explore_feed",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/a1dce8392ac784377f9bc6a1bf7a492b3ee696476f108aa0d8253f8205fbf6b7.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-8",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.xiaohongshu.com/explore/67408ba7000000000800692b?xsec_source=pc_search&source=web_explore_feed",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/fd79c06e1a235e40db41e13bab3b7b615bf1614c5f25de1be7b226776f934bf5.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-9",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.xiaohongshu.com/explore/67dc0765000000000603cd6f?xsec_source=pc_search&source=web_explore_feed",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/0e3bc753214c501c6b79b7503a62ac90c19f75a55ef6bacf1de346ba6cf28fa3.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-10",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.sohu.com/a/570033233_121124307",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/6bc385d5656c9041323b4c166ddd7686889ec77da9e720738c20ac260e5b620c.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-11",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://icourse.club/course/18379/",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/6bc385d5656c9041323b4c166ddd7686889ec77da9e720738c20ac260e5b620c.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-12",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://lightlinger.substack.com/p/781",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/6bc385d5656c9041323b4c166ddd7686889ec77da9e720738c20ac260e5b620c.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-13",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://lightlinger.substack.com/p/427",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/6bc385d5656c9041323b4c166ddd7686889ec77da9e720738c20ac260e5b620c.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-14",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.xiaoyuzhoufm.com/episode/69415fc44c65abaff3509ed3",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/6bc385d5656c9041323b4c166ddd7686889ec77da9e720738c20ac260e5b620c.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-15",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://weixin.sogou.com/weixin?query=%E5%A4%8D%E6%97%A6%20%E7%94%B5%E5%BD%B1%20%E8%AF%BE%E7%A8%8B%E6%B5%8B%E8%AF%84%202019&type=2&ie=utf8",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/6bc385d5656c9041323b4c166ddd7686889ec77da9e720738c20ac260e5b620c.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-16",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://weixin.sogou.com/weixin",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/6bc385d5656c9041323b4c166ddd7686889ec77da9e720738c20ac260e5b620c.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-17",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://weixin.sogou.com/weixin?query=%E5%A4%8D%E6%97%A6%E7%94%B5%E5%BD%B1%E8%AF%BE%E7%A8%8B%E6%B5%8B%E8%AF%84&type=2&ie=utf8",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/6bc385d5656c9041323b4c166ddd7686889ec77da9e720738c20ac260e5b620c.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-18",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.zhihu.com/question/406062503/answer/3270298349",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/47d4b27db5114420d6fac88bd97ce70e9e99c8a6d7c7349aa473ab8b911c14fc.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-19",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.zhihu.com/question/20770945/answer/38611516",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/47d4b27db5114420d6fac88bd97ce70e9e99c8a6d7c7349aa473ab8b911c14fc.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-20",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.zhihu.com/question/327633793/answer/711754331",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/47d4b27db5114420d6fac88bd97ce70e9e99c8a6d7c7349aa473ab8b911c14fc.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-21",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.zhihu.com/question/551311143/answer/2662561770",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/47d4b27db5114420d6fac88bd97ce70e9e99c8a6d7c7349aa473ab8b911c14fc.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-22",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.xiaohongshu.com/explore/6a8168ac000000002c0051ba",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/5e62ae789df9625893dc652ea3e5b7bc39b6c4ce879fa987c2ea36bd084480b6.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-23",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.xiaohongshu.com/explore/6865326f000000001d00d972",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/04ad4cc51c35ff342b83d7fd801eff0aa1f5795dafd1cac577147f965c127c57.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-24",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://iss.fudan.edu.cn/Why_FISS/Students_Feedback.htm",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/dee0140dc203af840bacd41b590f39270f388e159e419dabd0589b4f764c422c.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-25",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://iss.fudan.edu.cn/GEIS10033NewApproachestoSustainableDevelopment.pdf",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/0ed8cadb86e91950b0a92d1e5c40fabbaf2c414acff6bf78fdb340e2df5ec3b9.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-26",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://iss.fudan.edu.cn/GEIS30023EnvironmentalHealthAirPollutionandClimateChange.pdf",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/0ed8cadb86e91950b0a92d1e5c40fabbaf2c414acff6bf78fdb340e2df5ec3b9.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-27",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.xiaohongshu.com/explore/68be5eb8000000001c0348ee",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/72cf9978565f1b47d2cf8176920ce55f0a9396a5b5394684c4e5ed61131f8e52.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-28",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.zhihu.com/question/364656283/answer/1337042056",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/72cf9978565f1b47d2cf8176920ce55f0a9396a5b5394684c4e5ed61131f8e52.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-29",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.zhihu.com/question/382899242/answer/1111021718",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/72cf9978565f1b47d2cf8176920ce55f0a9396a5b5394684c4e5ed61131f8e52.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-30",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.shobserver.com/journal/getMobileArticle.htm?id=521294",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/2f57816fb4576f9c5961c1943071d6f72c31dcea793fe60cc40c7ba640a6aa75.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-31",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://news.fudan.edu.cn/2025/0107/c3183a143897/page.htm",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/2f57816fb4576f9c5961c1943071d6f72c31dcea793fe60cc40c7ba640a6aa75.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-32",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://fudanmanual.github.io/FudanManual/Curriculum/Major/CS/",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/2f57816fb4576f9c5961c1943071d6f72c31dcea793fe60cc40c7ba640a6aa75.json",
+      "status": "historical_lead_not_automatically_a_course_review"
+    },
+    {
+      "id": "historical-web-33",
+      "type": "既往公开平台检索线索／文章",
+      "url": "https://www.fudan.edu.cn/2026/0604/c24a149451/page.htm",
+      "purpose": "来自既往外部检索台账；是否为本校课程、是否读过正文、是否采用，须回查原台账。",
+      "provenance_archive": "external-web-001.zip",
+      "provenance_member": "blobs/2f57816fb4576f9c5961c1943071d6f72c31dcea793fe60cc40c7ba640a6aa75.json",
+      "status": "historical_lead_not_automatically_a_course_review"
     }
   ],
   "private_inputs": [
