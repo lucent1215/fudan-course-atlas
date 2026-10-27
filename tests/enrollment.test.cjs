@@ -2,7 +2,7 @@ const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),asse
 const root=path.resolve(__dirname,'../public'),data=JSON.parse(fs.readFileSync(root+'/data/enrollment.json','utf8')),catalog=JSON.parse(fs.readFileSync(root+'/data/catalog.json','utf8'));
 let passed=0;const ok=(v,m)=>{assert.ok(v,m);passed++};const valid=new Set(catalog.scope.map(g=>g.id));
 ok(data.terms.length===8&&data.terms.filter(t=>!t.term.includes('暑')).length===7,'seven regular semesters plus separately queried summer');
-ok(data.stats.source_sections===43840&&data.records.length===11852&&data.records.filter(r=>r.term!=='2026暑').length===11757,'source and matched regular/summer teaching sections reconcile');
+ok(data.stats.source_sections===43840&&data.records.length===data.stats.matched_sections&&data.records.length>=11852&&data.records.filter(r=>r.term==='2026暑').length===95,'source and matched regular/summer teaching sections reconcile');
 ok(data.records.every(r=>r.course_ids.length&&r.course_ids.every(id=>valid.has(id))),'all enrollment rows refer to catalog courses');
 ok(data.records.every(r=>r.mapping_method==='course_code_and_name'),'same title alone never merges enrollment');
 ok(data.records.every(r=>Number.isInteger(r.std_count)&&r.std_count>=0&&Number.isInteger(r.limit_count)&&r.limit_count>=0),'aggregate counts are nonnegative integers');

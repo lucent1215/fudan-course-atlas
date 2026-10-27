@@ -5,11 +5,11 @@
   function text(v){return typeof v==='string'?v:Array.isArray(v)?v.map(text).filter(Boolean).join('；'):''}
   function chosen(g,term='all'){const r=byId.get(g.id);return r?.term_summaries?.[term]||r}
   function profile(g,teacher,term='all'){return (chosen(g,term)?.by_teacher||[]).find(r=>r.teacher===teacher||r.teacher.split(/[、,，]/).map(x=>x.trim()).includes(teacher))}
-  function card(g,teachers=[],term='all'){const r=chosen(g,term);return r?r.card:g.name+' · 课程资料正在整理。'}
+  function card(g,teachers=[],term='all'){const r=chosen(g,term);return r?(r.card||r.overview||''):g.name+' · 课程资料正在整理。'}
   function comparison(g,teachers,key,term='all'){const r=chosen(g,term);if(!r)return '—';const profiles=(r.by_teacher||[]).filter(p=>teachers.includes(p.teacher)||p.teacher.split(/[、,，]/).every(t=>teachers.includes(t.trim())));if(key==='summary')return profiles.length?profiles.map(p=>p.teacher+'：'+p.summary).join('；'):r.card;const field={teaching:'learning',prereq:'fit'}[key]||key;return profiles.map(p=>text(p[field]||(key==='teaching'?p.summary:''))).filter(Boolean).join('；')||(!r.by_teacher?.length?text(r[field]):'')||'—'}
   function sources(refs){const rs=[...new Set(refs||[])];return rs.length?'<details class="synthesis-sources"><summary>综合依据 · '+rs.length+'项</summary>'+rs.map(key=>'<p>'+esc(data.sources[key]?.label||key)+'</p>').join('')+'</details>':''}
   function renderRecord(r,g,teacher,heading){
-    const p=teacher==='all'?null:(r.by_teacher||[]).find(x=>x.teacher===teacher||x.teacher.split(/[、,，]/).map(v=>v.trim()).includes(teacher)),overview=(p?(p.teacher!==teacher?'联合授课（'+p.teacher+'）：':'')+p.summary:'')||(teacher!=='all'&&r.learning?r.learning:r.overview||r.card);
+    const p=teacher==='all'?null:(r.by_teacher||[]).find(x=>x.teacher===teacher||x.teacher.split(/[、,，]/).map(v=>v.trim()).includes(teacher)),overview=(p?(p.teacher!==teacher?'原资料合并标注教师（'+p.teacher+'）：':'')+p.summary:'')||(teacher!=='all'&&r.learning?r.learning:r.overview||r.card);
     let out='<section class="detail-note course-synthesis"><h3>'+esc(heading)+'</h3><p class="verdict">'+esc(overview)+'</p>';
     const fields=[['learning','课程主线'],['workload','主要投入'],['assessment','考核安排'],['grading','给分与考试反馈'],['fit','选课与准备']];
     for(const [k,label] of fields){const value=text(p?p[k]:r[k]);if(value&&value!==overview)out+='<div class="field"><b>'+label+'</b><p>'+esc(value)+'</p></div>'}

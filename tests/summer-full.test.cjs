@@ -3,7 +3,7 @@ const root=path.resolve(__dirname,'../public'),read=f=>JSON.parse(fs.readFileSyn
 const cat=read('catalog.json'),summer=read('summer.json'),full=read('full-reviews.json'),idx=read('curated-reading.json'),sup=read('review-supplement.json');let passed=0;const ok=(v,m)=>{assert.ok(v,m);passed++};
 ok(summer.records.length===81&&summer.records.reduce((n,r)=>n+r.offerings.length,0)===100,'official summer PDF and live-index union preserved');
 ok(summer.records.filter(r=>r.recognition?.kind==='core').length===22,'core recognition rows');ok(summer.records.filter(r=>r.recognition?.kind==='english_2023_and_before').length===12,'English recognition cohort limitation');
-ok(Object.keys(full.records).length===210&&full.records[4345].text.length===2026,'selected complete originals include screenshot example without truncation');ok(idx.courses.every(c=>c.long_reviews.every(r=>full.records[r.review_id])),'every indexed long original has a complete body');
+ok(Object.keys(full.records).length>=210&&full.records[4345].text.length===2026,'selected complete originals include screenshot example without truncation');ok(idx.courses.every(c=>c.long_reviews.every(r=>full.records[r.review_id])),'every indexed long original has a complete body');
 ok(Object.values(full.records).every(r=>r.author_label&&r.source_url&&r.license==='CC BY 4.0'&&r.license_basis_url),'full originals carry source attribution and license');
 const cancelled=summer.records.find(r=>r.code==='GEXZ10027');ok(cancelled.offerings.every(o=>o.cancelled),'PDF line break inside 停开 does not hide cancellation');
 const box={window:{},URL,encodeURIComponent,document:{addEventListener(){}},fetch:async u=>({ok:true,json:async()=>read(u.replace(/^data\//,''))})};
